@@ -1,32 +1,73 @@
-/* https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff */
+/* https://coolors.co/palette/f6bd60-f7ede2-f5cac3-84a59d-f28482 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    font-family: 'Poppins', Georgia, sans-serif;
+    display: grid;
 }
 /* header */
 
 header {
     display: grid;
-    grid-template-columns: auto;
-    background-color: #CDB4DB;
+    background-color: #F5CAC3;
+    grid-template-columns: .5fr 2fr .1fr 6fr .5fr;
+    grid-template-rows: .25fr 2fr .25fr;
+    grid-row: 1/2;
+    
 }
 header img {
-    width: 200px;
-    height: 200px;
+    max-width: 150px;
     grid-column: 2/3;
+    grid-row: 2/3;
     /* border: solid 2px #FFAFCC; */
-    /* border-radius: 50%; */
-    /* background-color: #FFAFCC; */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.829);
+    box-shadow: 5px 5px 10px grey;
 }
 header h1 {
-    grid-column: 3/7;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    font-size: 3em;
+    color: #F28482;
+    text-shadow: 2px 2px 3px gray;
+}
+
+/* main */
+
+main {
+    color: white;
+    background-color: #F28482;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    grid-row: 2/3;
+    padding: 25px 50px;
+}
+
+main hr {
+    color: #84A59D;
+}
+
+main h1 {
+    text-shadow: 2px 2px 5px grey;
 }
 
 /* footer  */
 footer {
+    background-color:#F5CAC3;
+    /* padding: 25px 50px; */
+    /* margin-top: 0; */
     display: grid;
-    grid-template-columns: auto;
-    background-color: #CDB4DB;
+    grid-template-columns: 1fr 10fr 1fr;
+    /* justify-content: center;
+    align-items: center; */
+    grid-row: 3/4;
+}
+
+footer p {
+    color: black;
+    grid-column: 2/3;
+    text-align: center;
 }
 

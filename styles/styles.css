@@ -1,0 +1,32 @@
+/* https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff */
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* header */
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #CDB4DB;
+}
+header img {
+    width: 200px;
+    height: 200px;
+    grid-column: 2/3;
+    /* border: solid 2px #FFAFCC; */
+    /* border-radius: 50%; */
+    /* background-color: #FFAFCC; */
+}
+header h1 {
+    grid-column: 3/7;
+}
+
+/* footer  */
+footer {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #CDB4DB;
+}
+

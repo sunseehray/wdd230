@@ -1,6 +1,13 @@
-const d = new Date();
-const year = d.getFullYear();
-document.querySelector('#footer-year').textContent = year;
+// copyright year
+let d = new Date();
+let year = d.getFullYear();
+document.querySelector('#footer-year').innerHTML = year;
 
-const update = "April 17, 2023";
-document.querySelector('#date-of-update').textContent = update;
+// Last Update
+const options = {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+};
+document.querySelector('#date-of-update').innerHTML = `Last Updated: ${new Date(document.lastModified).toLocaleDateString("en-US", options)}`;

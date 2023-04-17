@@ -30,15 +30,14 @@ header h1 {
     grid-column: 4/5;
     grid-row: 2/3;
     font-size: 3em;
-    color: #F28482;
+    color: #493e3e;
     text-shadow: 2px 2px 3px gray;
 }
 
 /* main */
 
 main {
-    color: white;
-    background-color: #F28482;
+    color: #482727;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
     grid-row: 2/3;
@@ -51,6 +50,15 @@ main hr {
 
 main h1 {
     text-shadow: 2px 2px 5px grey;
+}
+
+main a {
+    color: #482727;
+}
+
+main a:hover {
+    color: #482727;
+    background: #F28482;
 }
 
 /* footer  */

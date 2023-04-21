@@ -5,7 +5,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Poppins', Georgia, sans-serif;
-    display: grid;
 }
 /* header */
 
@@ -14,19 +13,19 @@ header {
     background-color: #F5CAC3;
     grid-template-columns: .5fr 2fr .1fr 6fr .5fr;
     grid-template-rows: .25fr 2fr .25fr;
-    grid-row: 1/2;
-    
 }
+
 header img {
-    width: 150px;
     height: 150px;
+    width: 150px;
     grid-column: 2/3;
     grid-row: 2/3;
-    /* border: solid 2px #FFAFCC; */
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.829);
     box-shadow: 5px 5px 10px grey;
+    align-self: center;
 }
+
 header h1 {
     grid-column: 4/5;
     grid-row: 2/3;
@@ -34,6 +33,7 @@ header h1 {
     color: #493e3e;
     text-shadow: 2px 2px 3px gray;
     text-align: center;
+    align-self: center;
 }
 
 /* main */

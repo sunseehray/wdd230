@@ -1,7 +1,7 @@
 // copyright year
 let d = new Date();
 let year = d.getFullYear();
-document.querySelector('#footer-year').innerHTML = year;
+document.querySelector('#footerYear').innerHTML = year;
 
 // Last Update
 const options = {
@@ -10,4 +10,4 @@ const options = {
     day: "numeric",
     year: "numeric"
 };
-document.querySelector('#date-of-update').innerHTML = `Last Updated: ${new Date(document.lastModified).toLocaleDateString("en-US", options)}`;
+document.querySelector('#dateLastUpdated').innerHTML = `Last Updated: ${new Date(document.lastModified).toLocaleDateString("en-US", options)}`;

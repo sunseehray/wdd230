@@ -32,6 +32,7 @@ header h1 {
     font-size: 3em;
     color: #493e3e;
     text-shadow: 2px 2px 3px gray;
+    text-align: center;
 }
 
 /* main */
@@ -39,16 +40,15 @@ header h1 {
 main {
     color: #482727;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    grid-row: 2/3;
-    padding: 25px 50px;
+    font-size: 1.2rem;
+    padding: 25px;
 }
 
 main hr {
     color: #84A59D;
 }
 
-main h1 {
+main h2 {
     text-shadow: 2px 2px 5px grey;
 }
 
@@ -64,18 +64,8 @@ main a:hover {
 /* footer  */
 footer {
     background-color:#F5CAC3;
-    /* padding: 25px 50px; */
-    /* margin-top: 0; */
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    /* justify-content: center;
-    align-items: center; */
-    grid-row: 3/4;
-}
-
-footer p {
+    padding: 1rem;
     color: black;
-    grid-column: 2/3;
     text-align: center;
 }
 

@@ -1,2 +1,2 @@
 document.querySelector('#footerYear').innerHTML = new Date().getFullYear();
-document.querySelector('#dateLastUpdated').innerHTML = new Date(document.lastModified);
+document.querySelector('#dateLastUpdated').innerHTML = document.lastModified;

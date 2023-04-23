@@ -11,15 +11,14 @@ body {
 header {
     display: grid;
     background-color: #F5CAC3;
-    grid-template-columns: .5fr 2fr .1fr 6fr .5fr;
-    grid-template-rows: .25fr 2fr .25fr;
+    grid-template-columns: 1fr 4fr;
+    padding: 15px;
 }
 
 header img {
     height: 150px;
     width: 150px;
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 1/2;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.829);
     box-shadow: 5px 5px 10px grey;
@@ -27,8 +26,7 @@ header img {
 }
 
 header h1 {
-    grid-column: 4/5;
-    grid-row: 2/3;
+    grid-column: 2/3;
     font-size: 3em;
     color: #493e3e;
     text-shadow: 2px 2px 3px gray;

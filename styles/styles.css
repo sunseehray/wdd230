@@ -38,7 +38,7 @@ header h1 {
 
 main {
     color: #482727;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', Courier, monospace;
     font-size: 1.2rem;
     padding: 25px;
 }
@@ -48,6 +48,7 @@ main hr {
 }
 
 main h2 {
+    font-family: 'Libre Baskerville', Garamond, serif;
     text-shadow: 2px 2px 5px grey;
 }
 

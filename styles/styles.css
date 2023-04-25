@@ -1,4 +1,4 @@
-/* https://coolors.co/palette/f6bd60-f7ede2-f5cac3-84a59d-f28482 */
+/* https://coolors.co/012a36-482727-f5cac3-84a59d-f28482 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -29,7 +29,7 @@ header h1 {
     grid-column: 2/3;
     font-size: 3em;
     color: #493e3e;
-    text-shadow: 2px 2px 3px gray;
+    text-shadow: 2px 2px 3px #84a59d;
     text-align: center;
     align-self: center;
 }
@@ -39,17 +39,18 @@ header h1 {
 main {
     color: #482727;
     font-family: 'Roboto Mono', Courier, monospace;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     padding: 25px;
 }
 
 main hr {
-    color: #84A59D;
+    color: #84a59d;
 }
 
 main h2 {
     font-family: 'Libre Baskerville', Garamond, serif;
-    text-shadow: 2px 2px 5px grey;
+    text-shadow: 2px 2px 5px #84a59d;
 }
 
 main a {
@@ -67,5 +68,7 @@ footer {
     padding: 1rem;
     color: black;
     text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 

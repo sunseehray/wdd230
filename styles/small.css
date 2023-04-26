@@ -29,7 +29,7 @@ header img {
 header h1 {
     grid-column: 2/3;
     color: #493e3e;
-    text-shadow: 2px 2px 3px #84a59d;
+    text-shadow: 2px 2px 3px grey;
     text-align: center;
     align-self: center;
 }

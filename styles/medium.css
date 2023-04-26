@@ -1,7 +1,5 @@
 @media only screen and (min-width: 32.5em) {
-    header {
-        max-height: 242px;
-    }
+  
     header img {
         width: 150px;
         height: auto;

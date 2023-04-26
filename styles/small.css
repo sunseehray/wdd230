@@ -11,12 +11,11 @@ body {
 header {
     display: grid;
     background-color: #F5CAC3;
-    grid-template-columns: 1fr 4fr;
     padding: 15px;
 }
 
 header img {
-    width: 150px;
+    width: 120px;
     height: auto;
     grid-column: 1/2;
     margin: 0 auto;
@@ -27,9 +26,9 @@ header img {
 }
 
 header h1 {
-    grid-column: 2/3;
     color: #493e3e;
-    font-size: 3em;
+    grid-column: 2/3;
+    font-size: 37px;
     text-shadow: 2px 2px 3px grey;
     text-align: center;
     align-self: center;

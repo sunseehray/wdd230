@@ -16,9 +16,10 @@ header {
 }
 
 header img {
-    height: 150px;
-    width: 150px;
+    width: 100px;
+    height: auto;
     grid-column: 1/2;
+    margin: 0 auto;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.829);
     box-shadow: 5px 5px 10px grey;
@@ -27,7 +28,6 @@ header img {
 
 header h1 {
     grid-column: 2/3;
-    font-size: 3em;
     color: #493e3e;
     text-shadow: 2px 2px 3px #84a59d;
     text-align: center;
@@ -39,8 +39,8 @@ header h1 {
 main {
     color: #482727;
     font-family: 'Roboto Mono', Courier, monospace;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     padding: 25px;
 }
 
@@ -50,6 +50,8 @@ main hr {
 
 main h2 {
     font-family: 'Libre Baskerville', Garamond, serif;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     text-shadow: 2px 2px 5px #84a59d;
 }
 

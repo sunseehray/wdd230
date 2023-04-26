@@ -16,7 +16,7 @@ header {
 }
 
 header img {
-    width: 100px;
+    width: 150px;
     height: auto;
     grid-column: 1/2;
     margin: 0 auto;
@@ -29,6 +29,7 @@ header img {
 header h1 {
     grid-column: 2/3;
     color: #493e3e;
+    font-size: 3em;
     text-shadow: 2px 2px 3px grey;
     text-align: center;
     align-self: center;
@@ -74,3 +75,15 @@ footer {
     line-height: 1.5rem;
 }
 
+@media screen and (max-width: 520px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+    header img {
+        grid-column: 1/2;
+    }
+    header h1 {
+        grid-column: 1/2;
+    }
+    
+}

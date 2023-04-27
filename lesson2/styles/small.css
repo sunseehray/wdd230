@@ -57,13 +57,10 @@ main .design-card h3 {
 
 main .design-card img {
     width: 200px;
+    height: auto;
     display: block;
     margin: 15px auto;
     border: solid 5px black;
     border-radius: 15px;
     box-shadow: 2px 2px 3px #012A36;
-}
-
-main .design-card p {
-    text-align: justify;
 }

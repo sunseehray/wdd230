@@ -1,0 +1,71 @@
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', Verdana, sans-serif;
+}
+header, footer {
+    background-color: #012A36;
+    margin: 0 auto;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #b3ddd3;
+}
+
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#repetition #alignment #fitts-law {
+    grid-column: 1/2;
+}
+
+main .design-card  {
+    background-color: #b3ddd3;
+    border-radius: 5px;
+    margin: 15px 15px;
+    align-items: center;
+    padding-bottom: 15px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+main .design-card h4, a, p {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #012A36;
+}
+
+main .design-card h3 {
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-family: 'Libre Baskerville', Garamond, serif;
+    text-align: center;
+    background-color: #012A36;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 0;
+}
+
+main .design-card img {
+    width: 250px;
+    display: block;
+    margin: 15px auto;
+    border: solid 5px black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px #012A36;
+}
+
+
+main .design-card p {
+    text-align: justify;
+}

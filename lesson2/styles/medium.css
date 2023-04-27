@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) {
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
+    main #repetition {
+        grid-column: 1/2;
+    }
+
+    main #alignment {
+        grid-column: 2/3;
+    }
+
+    main #fitts-law {
+        grid-column: 1/3;
+    }
+}

@@ -1,5 +1,130 @@
+/* https://coolors.co/fec800-5e17eb-98c1d9-25171a */
+/* https://coolors.co/fec800-5e17eb-0d1321-86615c */
+/* Some of these were based on WDD130 Site Plan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    max-width: 800px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #0D1321;
+    color: #FEC800;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0, 0.2);
+}
+
+header, main, footer {
+    max-width: 767px;
     margin: 0 auto;
 }
 
+nav {
+    background-color: #FEC800;
+    margin: 0 auto;
+    max-width: 780px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: #0D1321;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, transparent, #5E17EB, transparent) bottom / 
+    var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+.active {
+    color: #5E17EB;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.colors th {
+    background-color: grey;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #FEC800;
+}
+
+.secondary {
+    background-color: #5E17EB;
+    color: white;
+}
+
+.accent1 {
+    background-color: #0D1321;
+    color: white;
+}
+
+.accent2 {
+    background-color: #86615C;
+    color: white;
+}
+
+p.colored, p.non-colored {
+    padding: 18px;
+}
+p.colored {
+    color: #0D1321;
+    background-color: #FEC800;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+
+}
+
+footer {
+    padding: .5rem;
+    display: block;
+    text-align: center;
+}

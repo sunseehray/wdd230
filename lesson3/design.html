@@ -6,8 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design</title>
     <meta name="description" content="Design for the Chamber of Commerce Website Term Project for WDD230">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Design</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="target-audience.html">Target Audience</a></li>
+            <li><a href="design.html" class="active">Design</a></li>
+        </ul>
+    </nav>
+    <main>
+        <hr>
+        <h1>Design Guide</h1>
+        <h2>Color Palette</h2>
+        <h4>Palette URL:</h4>
+        <a href="https://coolors.co/fec800-5e17eb-0d1321-86615c" target="_blank">https://coolors.co/fec800-5e17eb-0d1321-86615c</a>
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Accent 1</th>
+                    <th>Accent 2</th>
+                </tr>
+                <tr>
+                    <td class="primary">#FEC800</td>
+                    <td class="secondary">#5E17EB</td>
+                    <td class="accent1">#0D1321</td>
+                    <td class="accent2">#86615C</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Typography</h2>
+        <h3>Heading Font: Poppins</h3>
+        <h3>Paragraph Font: Poppins</h3>
+        <h2>Normal Paragraph Example</h2>
+        <p class="non-colored">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ullam vel vero alias praesentium, eveniet repudiandae ipsam assumenda quaerat eligendi dolor et commodi dolorum quibusdam sequi error ad, magni minus.</p>
+        <h2>Colored Paragraph Example</h2>
+        <p class="colored">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo saepe vel praesentium maxime quo accusantium repellat illum ducimus soluta, nisi culpa voluptas assumenda voluptatibus porro, ex, similique minus quisquam.</p>
+
+    </main>
+    <footer>
+        &copy; <span id="footerYear"></span> • Sunseehray Tirazona • Philippines
+        <br>
+        Last Updated: <span id="dateLastUpdated"></span>
+    </footer>
+    <script src="../scripts/app.js"></script>
 </body>
 </html>

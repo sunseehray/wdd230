@@ -32,7 +32,7 @@ header, main, footer {
 }
 
 nav {
-    background-color: #00539D;
+    background-color: #2E5DA1;
     margin: 0 auto;
     max-width: 780px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0, 0.2);
@@ -45,18 +45,18 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #D5EBFF;
+    color: white;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
-    background: linear-gradient(90deg, transparent, #FFF200, transparent) bottom / 
+    background: linear-gradient(90deg, transparent, #F7960F, transparent) bottom / 
     var(--d, 0) 3px no-repeat;
     transition: 0.5s;
 }
 
 .active {
-    color: #FFF200;
+    color: #f2d3aa;
 }
 
 .colors {
@@ -67,6 +67,15 @@ nav ul li a {
 
 main {
     padding: 0.75rem;
+}
+
+section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2, h3, p {
+    margin-bottom: 0.75rem;
 }
 table {
     display: table;
@@ -83,7 +92,7 @@ tbody {
 }
 
 .colors th {
-    background-color: grey;
+    background-color: lightgray;
 }
 
 td {
@@ -97,28 +106,28 @@ td {
 }
 
 .primary {
-    background-color: #00539D;
+    background-color: #2E5DA1;
+    color: white;
 }
 
 .secondary {
-    background-color: #FFF200;
+    background-color: #F7960F;
 }
 
 .accent1 {
-    background-color: #D5EBFF;
+    background-color: #F5F5F5;
 }
 
 .accent2 {
-    background-color: #0D1321;
-    color: white;
+    background-color: #85C536;
 }
 
 p.colored, p.non-colored {
     padding: 18px;
 }
 p.colored {
-    color: #00539D;
-    background-color: #FFF200;
+    color: #F5F5F5;
+    background-color: #2E5DA1;
 }
 
 #logo {

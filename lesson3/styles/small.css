@@ -1,5 +1,9 @@
 /* https://coolors.co/fec800-5e17eb-98c1d9-25171a */
 /* https://coolors.co/fec800-5e17eb-0d1321-86615c */
+
+
+/* https://coolors.co/00539d-fff200-d5ebff-0d1321 */
+
 /* Some of these were based on WDD130 Site Plan */
 * {
     margin: 0;
@@ -13,8 +17,7 @@ body {
 }
 
 header, footer {
-    background-color: #0D1321;
-    color: #FEC800;
+    color: #0D1321;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -29,7 +32,7 @@ header, main, footer {
 }
 
 nav {
-    background-color: #FEC800;
+    background-color: #00539D;
     margin: 0 auto;
     max-width: 780px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0, 0.2);
@@ -42,18 +45,18 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #0D1321;
+    color: #D5EBFF;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
-    background: linear-gradient(90deg, transparent, #5E17EB, transparent) bottom / 
+    background: linear-gradient(90deg, transparent, #FFF200, transparent) bottom / 
     var(--d, 0) 3px no-repeat;
     transition: 0.5s;
 }
 
 .active {
-    color: #5E17EB;
+    color: #FFF200;
 }
 
 .colors {
@@ -62,6 +65,9 @@ nav ul li a {
     margin: 30px auto;
 }
 
+main {
+    padding: 0.75rem;
+}
 table {
     display: table;
     border-collapse: separate;
@@ -91,21 +97,19 @@ td {
 }
 
 .primary {
-    background-color: #FEC800;
+    background-color: #00539D;
 }
 
 .secondary {
-    background-color: #5E17EB;
-    color: white;
+    background-color: #FFF200;
 }
 
 .accent1 {
-    background-color: #0D1321;
-    color: white;
+    background-color: #D5EBFF;
 }
 
 .accent2 {
-    background-color: #86615C;
+    background-color: #0D1321;
     color: white;
 }
 
@@ -113,8 +117,8 @@ p.colored, p.non-colored {
     padding: 18px;
 }
 p.colored {
-    color: #0D1321;
-    background-color: #FEC800;
+    color: #00539D;
+    background-color: #FFF200;
 }
 
 #logo {
@@ -127,4 +131,6 @@ footer {
     padding: .5rem;
     display: block;
     text-align: center;
+    background-color: #00539D;
+    color: #D5EBFF;
 }

@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 .active {
-    color: #f2d3aa;
+    font-weight: bolder;
 }
 
 .colors {
@@ -74,9 +74,18 @@ section {
     margin-bottom: 25px;
 }
 
-h2, h3, p {
+h3, h4, p {
     margin-bottom: 0.75rem;
 }
+
+p {
+    font-size: .9em;
+}
+
+section h3 {
+    background-color: #F7960F;
+}
+
 table {
     display: table;
     border-collapse: separate;
@@ -126,8 +135,8 @@ p.colored, p.non-colored {
     padding: 18px;
 }
 p.colored {
-    color: #F5F5F5;
-    background-color: #2E5DA1;
+    color: black;
+    background-color: #85C536;
 }
 
 #logo {

@@ -23,7 +23,6 @@ header, footer {
     align-items: center;
     justify-content: center;
     padding: 0.75rem;
-    border: 1px solid rgba(0, 0, 0, 0, 0.2);
 }
 
 header, main, footer {
@@ -35,7 +34,6 @@ nav {
     background-color: #2E5DA1;
     margin: 0 auto;
     max-width: 780px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -86,6 +84,9 @@ section h3 {
     background-color: #F7960F;
 }
 
+hr {
+    margin-bottom: 10px;
+}
 table {
     display: table;
     border-collapse: separate;

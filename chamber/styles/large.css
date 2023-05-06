@@ -1,1 +1,49 @@
-@media only screen and (min-width: 60em)
+@media only screen and (min-width: 60em) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        grid-template-columns: 35% 50% 20%;
+        grid-template-rows: 100%;
+    }
+    .nav-branding {
+        grid-column: 1/2;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: #2E5DA1;
+        transition: 0s;
+    }
+
+    .nav-menu a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        color: white;
+        padding: 10px;
+    }
+
+    .nav-menu a:hover {
+        border-radius: 25px;
+    }
+
+    .nav-social {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+
+    #base-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

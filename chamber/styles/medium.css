@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 41em) {
 
     #chamber-footer {
         display: grid;
@@ -14,4 +14,34 @@
         margin: 10px;
     }
 
+    #chamber-footer-g1 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 3/8;
+        grid-row: 2/4;
+    }
+
+    #chamber-footer-g2 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 9/12;
+        grid-row: 2/4;
+    }
+
+    .separator {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    #base-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #base-footer div {
+        display: flex;
+        flex-direction: row;
+    }
 }

@@ -157,9 +157,28 @@ time {
 main {
     margin: 10px auto;
 }
+
+main p {
+    font-size: 100px;
+    text-align: center;
+}
 footer {
     background-color: #2E5DA1;
     color: white;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: .3rem;
+    background: linear-gradient(90deg, transparent, #F7960F, transparent) bottom / 
+    var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    --d: 75%;
 }
 
 footer img {
@@ -174,12 +193,39 @@ footer img {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding-top: 10px;
+    padding: 25px;
+}
+
+#chamber-footer-g1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#chamber-footer-g1 p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#chamber-footer-g1 address {
+    text-align: center;
+}
+
+#chamber-footer-g2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
 }
 
 #base-footer {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 25px;
 }
 
 .separator {

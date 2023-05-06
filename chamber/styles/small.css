@@ -171,7 +171,6 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
-    padding: .3rem;
     background: linear-gradient(90deg, transparent, #F7960F, transparent) bottom / 
     var(--d, 0) 3px no-repeat;
     transition: 0.5s;

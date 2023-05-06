@@ -1,4 +1,4 @@
-@media only screen and (min-width: 41em) {
+@media only screen and (min-width: 32.5em) {
 
     #chamber-footer {
         display: grid;
@@ -24,7 +24,7 @@
     #chamber-footer-g2 {
         display: flex;
         flex-direction: column;
-        grid-column: 9/12;
+        grid-column: 8/13;
         grid-row: 2/4;
     }
 
@@ -44,4 +44,5 @@
         display: flex;
         flex-direction: row;
     }
+
 }

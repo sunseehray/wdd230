@@ -5,9 +5,11 @@ document.querySelector('time').textContent = new Intl.DateTimeFormat("en-US", { 
 
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+    document.querySelector(".nav-menu").classList.toggle("open");
+    document.querySelector(".hamburger").classList.toggle("open");
 }
 
-const x = document.getElementById('hamburgerBtn');
+const x = document.querySelector(".hamburger");
 x.onclick = toggleMenu;
+
+document.querySelectorAll(".nav-link").onclick = toggleMenu;

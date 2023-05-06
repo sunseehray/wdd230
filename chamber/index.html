@@ -16,55 +16,80 @@
 </head>
 <body>
     <header>
-        <section class="topHeader">
-            <img src="images/cocm-logo-no-text.png" alt="Makati Chamber of Commerce Logo">
-            <section id="headings">
-                <h1>Makati<br><span id="subtitle">Chamber of Commerce</span></h1>
+        <nav class="navbar">
+            <section class="nav-branding">
+                <img src="images/cocm-logo-no-text.png" alt="">
+                <span class="company-name">
+                    <h1>
+                        <a href="#" class="nav-branding">MAKATI</a>
+                    </h1>
+                    <p>Chamber of Commerce</p>    
+                </span>
             </section>
-            <ul id="socialMedia">
-                <li><a href="#"><img src="images/facebook.png" alt="Facebook Logo"></a></li>
-                <li><a href="#"><img src="images/linkedIn.png" alt="LinkedIn Logo"></a></li>
+            <ul class="nav-social">
+                <li class="nav-social-item">
+                    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+                </li>
+                <li class="nav-social-item">
+                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedIn.png" alt="LinkedIn Icon"></a>
+                </li>
             </ul>
-            <nav>  
-                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            </nav>
-        </section>
-        <section class="responsiveNav">
-            <nav>
-                <ul id="primaryNav">
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="subHeader">
-            <time></time>
-        </section>
+            <ul class="nav-menu">
+                <!-- <li class="nav-item">
+                    <a href="index.html" class="nav-link" id="active">Home</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="hamburger">
+                <span>
+                    &#9776;
+                </span>
+                <span>
+                    X
+                </span>
+            </button>
+        </nav>
+        <time></time>
     </header>
     <main>
-        <section id="hero">
-            <p>Hero with site name and call to action</p>
-        </section>
-        <section>
-            <p>Event</p>
-        </section>
-        <section>
-            <p>Weather</p>
-        </section>
-        <section>
-            <p>News Release</p>
-        </section>
-        <section>
-            <p>Spotlight 1</p>
-            <p>Spotlight 2</p>
-        </section>
+        
     </main>
     <footer>
-        &copy; <span id="footerYear"></span> • Sunseehray Tirazona • Philippines
-        <br>
-        Last Updated: <span id="dateLastUpdated"></span>
+        <section id="chamber-footer">
+            <img src="images/cocm-logo-no-text.png" alt="Makati Chamber of Commerce Logo">
+            <div id="chamber-footer-g1">
+                <span>Makati Chamber of Commerce</span>
+                <address>123 Anywhere Street, Makati, Metro Manila, Philippines</address>    
+            </div>
+            <div id="chamber-footer-g2">
+                <email>info@mcc.com</email>
+                <tel>+(123) 456-7890</tel>
+                <a href="#" id="map-link">📍Map Link</a>    
+            </div>
+        </section>
+        <hr>
+        <section id="base-footer">
+            <p>&copy;</p>
+            <p class="separator"> • </p>   
+            <span id="footerYear"></span>
+            <p class="separator"> • </p>   
+            <p>Sunseehray Tirazona</p>
+            <p class="separator"> • </p>   
+            <p>WDD 230 Project</p>            
+            <p class="separator"> • </p>   
+            <p>Last Updated: <span id="dateLastUpdated"></span></p>
+        </section>
     </footer>
     <script src="scripts/app.js"></script>
 </body>

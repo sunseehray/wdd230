@@ -17,15 +17,13 @@
 <body>
     <header>
         <nav class="navbar">
-            <section class="nav-branding">
+            <div class="nav-branding">
                 <a href="index.html"><img src="images/cocm-logo-no-text.png" alt="" width="500" height="500"></a>
-                <span class="company-name">
-                    <h1>
-                        <a href="#" class="nav-branding">MAKATI</a>
-                    </h1>
-                    <p>Chamber of Commerce</p>    
-                </span>
-            </section>
+                <h1 class="company-name">
+                    <a href="#" class="nav-branding">MAKATI</a>
+                    <span>Chamber of Commerce</span> 
+                </h1>
+            </div>
             <ul class="nav-social">
                 <li class="nav-social-item">
                     <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" width="500" height="500"></a>
@@ -60,51 +58,51 @@
                 </span>
             </button>
         </nav>
-        <time></time>
+        <span id="time"></span>
     </header>
     <main>
         <section id="hero">
-            <p>Hero with site name and call to action</p>
+            <h2>Hero with site name and call to action</h2>
         </section>
         <section id="event">
-            <p>Event</p>
+            <h2>Event</h2>
         </section>
         <section id="weather">
-            <p>Weather</p>
+            <h2>Weather</h2>
         </section>
         <section id="news">
-            <p>News Release</p>
+            <h2>News Release</h2>
         </section>
         <section id="spotlight">
             <div class="spotlight">
-                <p>Spotlight 1</p>
+                <h2>Spotlight 1</h2>
             </div>
             <div class="spotlight">
-                <p>Spotlight 2</p>
+                <h2>Spotlight 2</h2>
             </div>
             <div class="spotlight">
-                <p>Spotlight 3</p>
+                <h2>Spotlight 3</h2>
             </div>
         </section>
         <section id="join">
-            <p>Join</p>
+            <h2>Join</h2>
         </section>
     </main>
     <footer>
-        <section id="chamber-footer">
+        <div id="chamber-footer">
             <div id="chamber-footer-g1">
                 <img src="images/cocm-logo-no-text.png" alt="Makati Chamber of Commerce Logo" width="500" height="500">
                 <p>Makati Chamber of Commerce</p>
                 <address>11 J.P. Rizal Avenue, Makati, Metro Manila, Philippines</address>    
             </div>
             <div id="chamber-footer-g2">
-                <email>📨 info@mcc.com</email>
-                <tel>☎️ 123-456-7890</tel>
+                <p>📨 info@mcc.com</p>
+                <p>☎️ 123-456-7890</p>
                 <a href="#" id="map-link">📍Location Map</a>    
             </div>
-        </section>
+        </div>
         <hr>
-        <section id="base-footer">
+        <div id="base-footer">
             <div>
                 <p>&copy; <span id="footerYear"></span></p>
                 <p class="separator"> • </p>   
@@ -114,7 +112,7 @@
                 <p class="separator"> • </p>       
             </div>
             <p>Last Updated: <span id="dateLastUpdated"></span></p>
-        </section>
+        </div>
     </footer>
     <script src="scripts/app.js"></script>
 </body>

@@ -1,7 +1,7 @@
 document.querySelector('#footerYear').innerHTML = new Date().getFullYear();
 document.querySelector('#dateLastUpdated').innerHTML = document.lastModified;
 
-document.querySelector('time').textContent = new Intl.DateTimeFormat("en-US", { dateStyle: "full"}).format(new Date());
+document.querySelector('#time').textContent = new Intl.DateTimeFormat("en-US", { dateStyle: "full"}).format(new Date());
 
 
 function toggleMenu() {

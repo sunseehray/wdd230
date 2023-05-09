@@ -23,7 +23,7 @@ header {
 
 .nav-branding {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 80px repeat(5, 1fr);
     align-items: center;
     color: white;
 }
@@ -37,18 +37,19 @@ header {
     border-radius: 50%;
 }
 
-.nav-branding span {
-    grid-column: 2/6;
-}
-
 .nav-branding h1 {
-    grid-column: 2/6;
-    text-shadow: 2px 2px 0 #aecdfa;
+    grid-column: 2/7;
     margin: 0;
+    line-height: 1.15rem;
 }
 
 .nav-branding h1 a {
     text-decoration: none;
+    text-shadow: 2px 2px 0 #aecdfa;
+}
+
+h1 span {
+    font-size: 16px;
 }
 
 .nav-branding p {
@@ -146,7 +147,7 @@ header {
     font-weight: bolder;
 }
 
-time {
+#time {
     background-color: #F7960F;
     display: block;
     text-align: center;

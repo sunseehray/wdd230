@@ -3,7 +3,7 @@
         display: none;
     }
 
-    .navbar {
+    nav {
         grid-column: 5/10;
         grid-row: 1/2;
 

@@ -73,7 +73,7 @@ header button {
     width: 35px;
 }
 
-.navbar {
+nav {
     grid-column: 1/13;
     grid-row: 3/4;
 }

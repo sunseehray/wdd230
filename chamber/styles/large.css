@@ -4,18 +4,16 @@
     }
 
     .navbar {
-        grid-template-columns: 35% 50% 20%;
-        grid-template-rows: 100%;
+        grid-column: 5/10;
+        grid-row: 1/2;
+
     }
-    .nav-branding {
-        grid-column: 1/2;
-    }
+  
     .nav-menu {
         display: flex;
         flex-direction: row;
-        position: static;
-        grid-column: 2/3;
-        grid-row: 1/2;
+        justify-content: space-between;
+        align-content: center;
         background-color: #2E5DA1;
         transition: 0s;
     }
@@ -34,9 +32,10 @@
         border-radius: 25px;
     }
 
-    .nav-social {
-        grid-column: 3/4;
+    ul.nav-social {
+        grid-column: 11/13;
         grid-row: 1/2;
+        margin-right: 20px;
     }
 
     main {

@@ -10,12 +10,11 @@ body {
 }
 header {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns:  80px repeat(11, 1fr);
     grid-template-rows: 90px auto auto;
     background-color: #2E5DA1;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
 }
 
 header a {
@@ -30,7 +29,7 @@ header a {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin: 10px;
+    margin-left: 10px;
 }
 
 h1 {
@@ -71,6 +70,8 @@ header button {
     grid-column: 12/13;
     grid-row: 1/2;
     width: 35px;
+    justify-self: flex-end;
+    margin: 0 10px;
 }
 
 nav {
@@ -93,7 +94,6 @@ nav {
     background-color: transparent;
     font-size: 35px;
     color: white;
-    margin-right: 10px;
 }
 
 .hamburger :nth-child(1) {

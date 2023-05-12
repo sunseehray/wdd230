@@ -11,7 +11,8 @@ button.addEventListener('click', () => {
     const listBtn = document.createElement('button');
 
     listBtn.setAttribute("class","delete");
-    listBtn.setAttribute("aria-label","close");
+    const ariaLabel = "delete" + " " + myFavChap;
+    listBtn.setAttribute("aria-label",ariaLabel);
 
     listItem.appendChild(listText);
     listText.textContent = myFavChap;

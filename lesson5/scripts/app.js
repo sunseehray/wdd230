@@ -4,25 +4,28 @@ const list = document.querySelector('ul');
 
 button.addEventListener('click', () => {
     const myFavChap = input.value;
-    input.value = "";
 
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBtn = document.createElement('button');
+    if (myFavChap != "") {
+        input.value = "";
 
-    listBtn.setAttribute("class","delete");
-    const ariaLabel = "delete" + " " + myFavChap;
-    listBtn.setAttribute("aria-label",ariaLabel);
+        const listItem = document.createElement('li');
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('button');
 
-    listItem.appendChild(listText);
-    listText.textContent = myFavChap;
-    listItem.appendChild(listBtn);
-    listBtn.textContent = "❌";
-    list.appendChild(listItem);
+        listBtn.setAttribute("class","delete");
+        const ariaLabel = "delete" + " " + myFavChap;
+        listBtn.setAttribute("aria-label",ariaLabel);
 
-    listBtn.addEventListener('click', () => {
-        list.removeChild(listItem);
-    })
+        listItem.appendChild(listText);
+        listText.textContent = myFavChap;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = "❌";
+        list.appendChild(listItem);
+
+        listBtn.addEventListener('click', () => {
+            list.removeChild(listItem);
+        })
+    }
 
     input.focus();
 })

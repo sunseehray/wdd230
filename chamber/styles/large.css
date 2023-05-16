@@ -17,6 +17,11 @@
         background-color: #2E5DA1;
         transition: 0s;
     }
+    
+    .nav-menu.open {
+        display: flex;
+        flex-direction: row;
+    }
 
     .nav-menu a {
         display: flex;

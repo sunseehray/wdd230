@@ -9,6 +9,18 @@ body {
     margin: 0 auto;
 }
 
+.banner {
+    text-align: center;
+    background-color: #85C536;
+    padding: 10px;
+    display: none;
+}
+
+.banner button {
+    background-color: transparent;
+    border: none;
+}
+
 header {
     display: grid;
     grid-template-columns:  80px repeat(11, 1fr);

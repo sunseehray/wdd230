@@ -6,32 +6,26 @@
         grid-template-rows: auto;
     }
 
-    main section {
-        margin: 5px 0;
-    }
-
     #hero {
+        margin: 0;
         grid-column: 1/13;
-        grid-row: 1/2;
         align-items: center;
         justify-items: center;
     }
 
     #hero h2 {
-        justify-self: center;
-        margin: 0 auto;
         font-size: 2.25rem;
     }
 
-    #hero button {
+    #hero a.button {
         grid-row: 4/5;
-        justify-self: center;
-        margin: 0 auto;
         font-size: 1.5rem;
     }
 
     #news {
         grid-column: 1/13;
+
+        /* Bring #news up in the feed */
         grid-row: 2/3;
     }
 
@@ -40,12 +34,8 @@
         grid-row: 3/4;
         display: flex;
         flex-direction: row;
-        gap: 5px;
-    }
-
-    .spotlight {
-        flex: 1 50%;
-
+        padding-top: 0;
+        gap: 10px;
     }
 
     #join {

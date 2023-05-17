@@ -157,6 +157,8 @@ nav {
 main section {
     padding: 16px;
     margin: 0 auto;
+    box-shadow: 0 0 10px lightgray;
+    background-color: white;
 }
 
 #hero {
@@ -171,9 +173,9 @@ main section {
     grid-row: 2/3;
     z-index: 1;
     justify-self: center;
-    color: white;
+    color: black;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px white;
 }
 
 #hero img {
@@ -217,6 +219,11 @@ main section {
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
+#news {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 #event p, #event h2 {
     text-align: center;
     margin: 0 25px;
@@ -254,6 +261,12 @@ div.spotlight {
 
 .spotlight h3 {
     font-size: 1.3rem;
+    width: 100%;
+    margin-top: -10px;
+    padding: 10px;
+    background-color: #2E5DA1;
+    text-align: center;
+    color: white;
 }
 
 div.spotlight hr {
@@ -266,10 +279,10 @@ div.spotlight a {
 }
 
 #spotlight img {
-    width: 60%;
+    width: 145px;
 }
 
-div q {
+.spotlight p {
     text-align: center;
     font-size: 1.1rem;
     font-style: italic;

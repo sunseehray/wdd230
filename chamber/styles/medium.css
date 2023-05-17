@@ -43,9 +43,8 @@
         gap: 10px;
         grid-column: 1/13;
         grid-row: 4/5;
-        background-color: #2E5DA1;
-        color: white;
         justify-content: center;
+        margin: 0;
     }
 
     #join a {

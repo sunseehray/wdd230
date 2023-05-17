@@ -198,7 +198,7 @@ main section {
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
-#event, #news {
+#event, #news, #join {
     margin: 10px auto;
     display: flex;
     flex-direction: column;

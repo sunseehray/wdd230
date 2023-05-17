@@ -220,6 +220,10 @@ main section {
     display: none;
 }
 
+#join h2 {
+    display: none;
+}
+
 #spotlight {
     display: flex;
     flex-direction: column;

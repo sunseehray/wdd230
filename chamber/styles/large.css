@@ -14,7 +14,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
-        background-color: #2E5DA1;
         transition: 0s;
     }
     
@@ -29,7 +28,7 @@
         align-items: center;
         justify-content: space-between;
         width: auto;
-        color: white;
+        color: #2E5DA1;
         padding: 10px;
     }
 

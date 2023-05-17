@@ -22,7 +22,7 @@
         object-fit: cover;
     }
 
-    #hero a.button {
+    .button {
         font-size: 1.5rem;
     }
 
@@ -56,11 +56,10 @@
         font-size: 1.5rem;
         text-align: center;
         justify-self: center;
+        width: 95%;
         background-color: #85C536;
         color: black;
-        text-decoration: none;
         padding: 10px;
-        box-shadow: 1px 1px 5px black ;
     }
 
     #join p {

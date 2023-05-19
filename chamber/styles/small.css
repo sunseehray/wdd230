@@ -284,16 +284,19 @@ div.spotlight hr {
 div.spotlight a {
     color: #2E5DA1;
     text-decoration: none;
+    font-weight: bolder;
+    background: linear-gradient(90deg, transparent, #F7960F, transparent) bottom / 
+    var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+
+}
+
+div.spotlight a:hover {
+    --d: 75%;
 }
 
 #spotlight img {
     width: 145px;
-}
-
-.spotlight p {
-    text-align: center;
-    font-size: 1.1rem;
-    font-style: italic;
 }
 
 div.tel-web {

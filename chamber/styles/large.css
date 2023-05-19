@@ -95,10 +95,6 @@
         width: 75px;
     }
 
-    #spotlight a, div q {
-        font-size: 12px;
-    }
-
     #news {
         display: flex;
         /* Should I remove justify-content? */

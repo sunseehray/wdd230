@@ -16,7 +16,7 @@ document.querySelectorAll(".nav-link").onclick = toggleMenu;
 
 // Display banner when it is a Monday or Tuesday
 const today = new Date().getDay();
-const announcement = '👉🏾 Come join us for the chamber meet and greet Wednesday at 7:00 pm';
+
 if (today === 1 || today === 2) {
     document.querySelector('.banner').style.display = "block";
 }

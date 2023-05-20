@@ -267,6 +267,10 @@ div.spotlight {
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
+div.spotlight h4 {
+    text-align: center;
+}
+
 .spotlight h3 {
     font-size: 1.3rem;
     width: 100%;

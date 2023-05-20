@@ -32,7 +32,7 @@ header {
 header a {
     text-decoration: none;
     text-shadow: 2px 2px 0 #aecdfa;
-    color: #2E5DA1;
+    color: #23487B;
 }
 #headerLogo {
     width: 60px;
@@ -46,7 +46,7 @@ h1 {
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
-    color: #2E5DA1;
+    color: #23487B;
 }
 
 h1 span {
@@ -212,7 +212,7 @@ main section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #2E5DA1;
+    color: #23487B;
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
@@ -223,7 +223,7 @@ main section {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    color: #2E5DA1;
+    color: #23487B;
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
@@ -239,7 +239,7 @@ main section {
 
 #event a {
     font-weight: bolder;
-    color: #2E5DA1;
+    color: #23487B;
     text-decoration: none;
 }
 
@@ -263,7 +263,7 @@ div.spotlight {
     gap: 8px;
     align-items: center;
     padding: 10px;
-    color: #2E5DA1;
+    color: #23487B;
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
@@ -272,7 +272,7 @@ div.spotlight {
     width: 100%;
     margin-top: -10px;
     padding: 10px;
-    background-color: #2E5DA1;
+    background-color: #23487B;
     text-align: center;
     color: white;
 }
@@ -282,7 +282,7 @@ div.spotlight hr {
 }
 
 div.spotlight a {
-    color: #2E5DA1;
+    color: #23487B;
     text-decoration: none;
     font-weight: bolder;
     background: linear-gradient(90deg, transparent, #F7960F, transparent) bottom / 
@@ -310,7 +310,7 @@ section div.spotlight:nth-child(3) {
 }
 
 footer {
-    background-color: #2E5DA1;
+    background-color: #23487B;
     color: white;
 }
 

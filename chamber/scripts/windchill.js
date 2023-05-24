@@ -1,5 +1,5 @@
 // Assume values are Celsius and KPH !!
-const temp = 33;
+const temp = 3;
 const windSpeed = 2.5;
 
 function CelsiusToFarenheit (tempCelsius) {
@@ -30,6 +30,6 @@ let windSpeedMPH = ConvertKPHToMPH(windSpeed);
 if (tempFarenheit <= 50 && windSpeedMPH > 3) {
     let f = CalculateWindChill(tempFarenheit, windSpeedMPH);
     document.querySelector('#windChillValue').innerHTML = "";
-    document.querySelector('#windChillValue').innerHTML = f;
+    document.querySelector('#windChillValue').innerHTML = f.toFixed(2);
 }
 

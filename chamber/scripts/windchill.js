@@ -1,6 +1,6 @@
 // Assume values are Celsius and KPH !!
-const temp = 5;
-const windSpeed = 5;
+const temp = 33;
+const windSpeed = 2.5;
 
 function CelsiusToFarenheit (tempCelsius) {
     let farenheit = (tempCelsius * 9 / 5) + 32;

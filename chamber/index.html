@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makati Chamber of Commerce</title>
     <meta name="description" content="The Makati Chamber of Commerce helps business owners and visitors in Makati connect and discover what's in and out in the market today. Join the Chamber and get access to perks and VIP services.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -21,7 +21,7 @@
         <button class="closeButton">✖️</button>
     </div>
     <header>
-        <a href="index.html"><img src="images/cocm-logo-no-text.png" alt="logo for Makati Chamber of Commerce" id="headerLogo"></a>
+        <a href="index.html"><img src="images/cocm_logo75.jpg" alt="logo" id="headerLogo"></a>
         <h1 class="company-name">
             <a href="index.html" class="nav-branding">MAKATI</a>
             <span>Chamber of Commerce</span> 
@@ -63,7 +63,11 @@
     <main>
         <section id="hero">
             <h2>Welcome to Makati</h2>
-            <img src="images/rsz_makati-skyline.jpg" alt="Skyline of Makati">
+            <img src="images/wdd230-org.jpg" alt="Skyline of Makati"
+                sizes="100%"
+                srcset="images/wdd230-orgSmall.jpg 570w,
+                        images/wdd230-orgMedium.jpg 960w,
+                        images/wdd230-orgLarge.jpg 1200w">
             <a href="#" class="button">Join the Chamber</a>
         </section>
         <section id="event">
@@ -83,7 +87,9 @@
         <section id="spotlight">
             <div class="spotlight">
                 <h3>GoSolar Philippines</h3>
-                <img src="images/gosolar_notext.jpg" alt="GoSolar Logo">
+                <picture class="spotlightImg">
+                    <img src="images/gosolar160.png" alt="GoSolar Logo">                    
+                </picture>
                 <h4>Solar Power Services</h4>
                 <hr>
                 <p>hello@gosolarphilippines.com</p>
@@ -94,7 +100,9 @@
             </div>
             <div class="spotlight">
                 <h3>PetLink</h3>
-                <img src="images/petlink.webp" alt="Petlink Logo">
+                <picture class="spotlightImg">
+                    <img src="images/petlink149.png" alt="Petlink Logo">
+                </picture>
                 <h4>Wellness & Veterinary Clinic</h4>
                 <hr>
                 <p>ask@petlinkvet.com</p>
@@ -105,7 +113,9 @@
             </div>
             <div class="spotlight">
                 <h3>LBC Express</h3>
-                <img src="images/lbc.png" alt="LBC logo">
+                <picture class="spotlightImg">
+                    <img src="images/lbc160.png" alt="LBC logo">
+                </picture>
                 <h4>Shipping Services</h4>
                 <hr>
                 <p>customercare@lbcexpress.com</p>
@@ -124,7 +134,7 @@
     <footer>
         <div id="chamber-footer">
             <div id="chamber-footer-g1">
-                <img src="images/logo_footer.png" alt="Makati Chamber of Commerce Logo">
+                <img src="images/cocm_logo100.jpg" alt="Makati Chamber of Commerce Logo">
                 <div>
                     <p>Makati Chamber of Commerce</p>
                     <address>11 J.P. Rizal Avenue, Makati, Metro Manila, Philippines</address>                   

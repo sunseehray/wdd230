@@ -21,6 +21,8 @@ body {
     border: none;
 }
 
+/* header */
+
 header {
     display: grid;
     grid-template-columns:  80px repeat(11, 1fr);
@@ -299,8 +301,10 @@ div.spotlight a:hover {
     --d: 75%;
 }
 
-#spotlight img {
-    width: 145px;
+.spotlightImg {
+    height: 145px;
+    display: flex;
+    align-items: center;
 }
 
 div.tel-web {

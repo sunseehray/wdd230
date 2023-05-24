@@ -56,6 +56,7 @@
 
     #hero img {
         max-height: none;
+        border: 1px red dashed;
     }
 
     #hero .button {
@@ -102,8 +103,8 @@
         display: inherit;
     }
 
-    #spotlight img {
-        width: 75px;
+    .spotlightImg {
+        height: fit-content;
     }
 
     #news {

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 36em) {
 
     main {
         display: grid;
@@ -19,7 +19,6 @@
 
     #hero img {
         max-height: 500px;
-        object-fit: cover;
     }
 
     .button {

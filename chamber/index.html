@@ -79,7 +79,7 @@
         <section id="weather">
             <h2>Weather</h2>
             <img src="images/1530391_weather_clouds_sun_sunny_icon128.png" class="weatherIcon" alt="Weather Icon">
-            <p class="temperature"><span>33</span>°C</p>
+            <p class="temperature"><span id="tempValue"></span>°C</p>
             <p class="weatherDescription">Partly Cloudy</p>
             <table>
                 <tbody>
@@ -89,7 +89,7 @@
                     </tr>
                     <tr>
                         <td>Wind Chill:</td>
-                        <td><span>N/A</span></td>
+                        <td><span id="windChillValue">N/A</span></td>
                     </tr>    
                 </tbody>
             </table>
@@ -174,5 +174,6 @@
         </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

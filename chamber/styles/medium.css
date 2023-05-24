@@ -55,7 +55,7 @@
         font-size: 1.5rem;
         text-align: center;
         justify-self: center;
-        width: 95%;
+        width: 80%;
         background-color: #85C536;
         color: black;
         padding: 10px;
@@ -77,6 +77,7 @@
         margin: 10px;
         margin-right: 0;
         margin-left: 0;
+        width: auto;
     }
 
     #chamber-footer {

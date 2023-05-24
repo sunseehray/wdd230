@@ -49,6 +49,10 @@
         row-gap: 10px;
     }
 
+    #event, #news, #weather {
+        gap: 0;
+    }
+
     #hero {
         grid-column: 4/10;
         grid-row: 1/3;

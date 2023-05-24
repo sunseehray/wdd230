@@ -21,7 +21,7 @@ body {
     border: none;
 }
 
-/* header */
+/* <----------- HEADER ----------------> */
 
 header {
     display: grid;
@@ -156,6 +156,9 @@ nav {
     font-weight: bolder;
 }
 
+/* <----------- MAIN ----------------> */
+
+
 main section {
     padding: 16px;
     margin: 0 auto;
@@ -163,11 +166,12 @@ main section {
     background-color: white;
 }
 
+/* <----------- hero ----------------> */
+
 #hero {
     display: grid;
     padding: 0;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: repeat(5, 1fr); */
 }
 
 #hero h2 {
@@ -209,6 +213,8 @@ main section {
     border: 2px solid #2E5DA1;
 }
 
+/* <----------- weather ----------------> */
+
 #weather {
     display: flex;
     flex-direction: column;
@@ -229,10 +235,14 @@ main section {
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
+/* <----------- news ----------------> */
+
 #news {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+/* <----------- event ----------------> */
 
 #event p, #event h2 {
     text-align: center;
@@ -244,6 +254,8 @@ main section {
     text-decoration: none;
 }
 
+/* <----------- join ----------------> */
+
 #join {
     display: none;
 }
@@ -251,6 +263,8 @@ main section {
 #join h2 {
     display: none;
 }
+
+/* <----------- spotlight ----------------> */
 
 #spotlight {
     display: flex;
@@ -315,6 +329,9 @@ div.tel-web {
 section div.spotlight:nth-child(3) {
     display: none;
 }
+
+/* <----------- FOOTER ----------------> */
+
 
 footer {
     background-color: #23487B;

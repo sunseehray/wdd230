@@ -49,6 +49,8 @@
         row-gap: 10px;
     }
 
+    /* home */
+
     #event, #news, #weather {
         gap: 0;
     }
@@ -119,6 +121,31 @@
         margin: 0;
     }
 
+        /* discover */
+
+    #finance {
+        grid-column: 1/5;
+    }
+
+    #culture {
+        grid-column: 5/9;
+    }
+
+    #shopping {
+        grid-column: 9/13;
+        grid-row: 1/2;
+    }
+    #education {
+        grid-column: 1/5;
+    }
+    #cityHall {
+        grid-column: 5/9;
+        grid-row: 2/3;
+    }
+    #demographics {
+        grid-column: 9/13;
+        grid-row: 2/3;
+    }
     #base-footer {
         display: flex;
         flex-direction: row;

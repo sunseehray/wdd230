@@ -150,10 +150,11 @@ nav {
     color: black;
     background-color: #85C536;
     transform: scale(1.1);
+    text-decoration: none;
 }
 
-#active {
-    font-weight: bolder;
+.active {
+    text-decoration: underline;
 }
 
 /* <----------- MAIN ----------------> */
@@ -164,6 +165,18 @@ main section {
     margin: 0 auto;
     box-shadow: 0 0 10px lightgray;
     background-color: white;
+}
+
+main h2, main p {
+    color: #23487B;
+}
+
+.discover {
+    margin: 10px auto;
+}
+
+.discover img {
+    width: 100%;
 }
 
 #event, #news, #join, #weather {

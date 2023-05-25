@@ -2,6 +2,7 @@
     margin: 0 auto;
     max-width: fit-content;
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr;

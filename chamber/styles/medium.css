@@ -84,44 +84,39 @@
 
     .discover {
         margin: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 16px;
     }
 
     .discover h2 {
-        height: 56px;
-    }
-
-    #finance {
-        grid-column: 1/7;
+        grid-column: 2/3;
         grid-row: 1/2;
     }
 
-    #culture {
-        grid-column: 7/13;
-        grid-row: 1/2;
+    .discover img {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin: 0;
     }
 
-    #shopping {
-        grid-column: 1/7;
+    .discover img:hover {
+        transform: translateY(-.25em);
+        box-shadow: 0 3px 3px black;
+        transition: 0.8s;
+    }
+
+    .discover p {
+        grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    #education {
-        grid-column: 7/13;
-        grid-row: 2/3;
+    #finance, #culture, #shopping, #education, #cityHall, #demographics {
+        grid-column: 1/13;
     }
 
-    #cityHall {
-        grid-column: 1/13;
-        grid-row: 3/4;
-    }
 
-    #demographics {
-        grid-column: 1/13;
-        grid-row: 4/5;
-    }
     /* footer */
 
     #chamber-footer {

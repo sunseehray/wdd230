@@ -171,14 +171,6 @@ main h2, main p {
     color: #23487B;
 }
 
-.discover {
-    margin: 10px auto;
-}
-
-.discover img {
-    width: 100%;
-}
-
 #event, #news, #join, #weather {
     display: flex;
     flex-direction: column;
@@ -383,6 +375,19 @@ div.tel-web {
 section div.spotlight:nth-child(3) {
     display: none;
 }
+
+/* <---------------- discover -----------------> */
+
+.discover {
+    margin: 10px auto;
+}
+
+.discover img {
+    width: 100%;
+    margin: 8px auto;
+}
+
+
 
 /* <----------- FOOTER ----------------> */
 

@@ -1,0 +1,17 @@
+* {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

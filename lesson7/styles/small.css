@@ -1,11 +1,7 @@
 * {
     margin: 0 auto;
-    max-width: fit-content;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
+    max-width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img[data-src] {
@@ -13,6 +9,22 @@ img[data-src] {
 }
 
 img {
+    display: block;
     filter: blur(0em);
     transition: filter 0.5s;
+    margin: 10px auto;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }

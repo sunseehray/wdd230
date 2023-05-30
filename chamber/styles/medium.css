@@ -85,12 +85,17 @@
 
     #finance, #culture, #shopping, #education, #cityHall {
         grid-column: 2/13;
+        margin-bottom: 0;
+    }
+
+    #cityHall {
+        margin-bottom: 10px;
     }
 
     #demographics {
         grid-column: 1/2;
         grid-row: 1/6;
-        margin-right: 10px;
+        margin: 10px 10px 10px 0;
     }
 
     #demographics img {margin: 10px auto;}

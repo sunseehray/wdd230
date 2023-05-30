@@ -391,6 +391,13 @@ section div.spotlight:nth-child(3) {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #23487B;
+}
+
+#demographics img {
+    width: 200px;
+    align-self: center;
+    margin: 8px auto;
 }
 
 

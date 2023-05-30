@@ -378,6 +378,15 @@ section div.spotlight:nth-child(3) {
 
 /* <---------------- discover -----------------> */
 
+.visits {
+    background-color: #23487B;
+    padding: 8px;
+}
+
+.visits p {
+    color: white;
+    text-align: center;
+}
 .discover {
     margin: 10px auto;
 }
@@ -399,7 +408,6 @@ section div.spotlight:nth-child(3) {
     align-self: center;
     margin: 8px auto;
 }
-
 
 
 /* <----------- FOOTER ----------------> */

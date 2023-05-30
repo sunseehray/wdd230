@@ -122,11 +122,11 @@
 
         /* discover */
     
-        .discover img:hover {
-            transform: translateY(-.25em);
-            box-shadow: 0 3px 3px black;
-            transition: 0.8s;
-        }
+    .discover img:hover {
+        transform: translateY(-.25em);
+        box-shadow: 0 3px 3px black;
+        transition: 0.8s;
+    }
 
         /* footer */
 

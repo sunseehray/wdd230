@@ -83,6 +83,12 @@
 
     /* discovery page */
 
+    .visits {
+        grid-column: 1/13;
+        grid-row: 1/2;
+        padding: 8px;
+    }
+
     #finance, #culture, #shopping, #education, #cityHall {
         grid-column: 2/13;
         margin-bottom: 0;
@@ -94,7 +100,7 @@
 
     #demographics {
         grid-column: 1/2;
-        grid-row: 1/6;
+        grid-row: 2/7;
         margin: 10px 10px 10px 0;
     }
 

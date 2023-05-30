@@ -387,6 +387,12 @@ section div.spotlight:nth-child(3) {
     margin: 8px auto;
 }
 
+#demographics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 
 /* <----------- FOOTER ----------------> */

@@ -382,11 +382,17 @@ section div.spotlight:nth-child(3) {
     background-color: #23487B;
     padding: 8px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visits-label {
+    font-weight: bolder;
 }
 
 .visits p {
     color: white;
-    text-align: center;
 }
 .discover {
     margin: 10px auto;

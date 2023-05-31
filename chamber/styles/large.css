@@ -121,6 +121,10 @@
     }
 
         /* discover */
+
+    .visits {
+        margin-bottom: 0;
+    }
     
     .discover img:hover {
         transform: translateY(-.25em);

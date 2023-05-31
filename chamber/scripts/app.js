@@ -24,3 +24,33 @@ if (today === 1 || today === 2) {
 document.querySelector('.closeButton').addEventListener('click', () => {
     document.querySelector('.banner').style.display = "none";
 })
+
+// lazy loading
+
+const images = document.querySelectorAll("img[data-srcset]");
+
+function preloadImage (img) {
+    const srcset = img.getAttribute("data-srcset");
+    if (!srcset) {
+        return;
+    }
+
+    img.srcset = srcset;
+    img.removeAttribute("data-srcset");
+}
+
+const imgObserver = new IntersectionObserver((items, imgObserver) => {
+    items.forEach(item => {
+        if (!item.isIntersecting) {
+            return;
+        } else {
+            preloadImage(item.target);
+            imgObserver.unobserve(item.target);
+        }
+    })
+})
+
+images.forEach(image => {
+    imgObserver.observe(image);
+})
+

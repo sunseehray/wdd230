@@ -422,6 +422,25 @@ p.attribution {
     margin: 8px auto;
 }
 
+/* <----------- JOIN ----------------> */
+
+.thankYouMsg {
+    grid-column: 1/13;
+    align-self: center;
+    justify-self: center;
+    margin: 100px auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form {
+    grid-column: 1/13;
+}
+
+label {
+    display: block;
+}
+
 /* <----------- FOOTER ----------------> */
 
 

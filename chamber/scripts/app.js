@@ -16,14 +16,22 @@ document.querySelectorAll(".nav-link").onclick = toggleMenu;
 
 // Display banner when it is a Monday or Tuesday
 const today = new Date().getDay();
+const banner = document.querySelector('.banner');
 
-if (today === 1 || today === 2) {
-    document.querySelector('.banner').style.display = "block";
+function DisplayBanner (banner) {
+    if (today === 1 || today === 2) {
+        banner.style.display = "block";
+    }
+    
+    document.querySelector('.closeButton').addEventListener('click', () => {
+        banner.style.display = "none";
+    }) 
 }
 
-document.querySelector('.closeButton').addEventListener('click', () => {
-    document.querySelector('.banner').style.display = "none";
-})
+if (banner != null) {
+    DisplayBanner(banner);
+}
+
 
 // lazy loading
 
@@ -54,7 +62,7 @@ images.forEach(image => {
     imgObserver.observe(image);
 })
 
-// number of visits
+// number of visits for Discovery Page only
 
 const visitsDisplay = document.querySelector("#num-visits");
 
@@ -69,12 +77,12 @@ function displayNumVisits (visitsDisplay, numVisits) {
         } else {
             visitsDisplay.textContent = `This is your first visit. 🎉 Welcome!`;
         }
+        numVisits++;
+        localStorage.setItem("numVisits-ls", numVisits);
     }
 }
 
 displayNumVisits(visitsDisplay, numVisits);
 
-numVisits++;
 
-localStorage.setItem("numVisits-ls", numVisits);
 

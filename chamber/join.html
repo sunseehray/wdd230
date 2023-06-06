@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makati Chamber of Commerce</title>
+    <meta name="description" content="The Makati Chamber of Commerce helps business owners and visitors in Makati connect and discover what's in and out in the market today. Join the Chamber and get access to perks and VIP services.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/cocm_logo75.webp" alt="logo" id="headerLogo"></a>
+        <h1 class="company-name">
+            <a href="index.html" class="nav-branding">MAKATI</a>
+            <span>Chamber of Commerce</span> 
+        </h1>
+        <ul class="nav-social">
+            <li class="nav-social-item">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook icon"></a>
+            </li>
+            <li class="nav-social-item">
+                <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="LinkedIn Icon"></a>
+            </li>
+        </ul>
+        <button class="hamburger">
+            <span>
+                &#9776;
+            </span>
+            <span>
+                X
+            </span>
+        </button>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="discover.html" class="nav-link">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="join.html" class="nav-link active">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <span id="time"></span>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Position Title <input type="text" name="position" ></label>
+                <label>Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                <label>Cellphone Number <input type="tel" name="tel" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Details</legend>
+                <label>Business Name <input type="text" name="business-name" required></label>
+                <label for="business-description">Business Description <textarea id="business-description" name="business-description"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Please select one: </div>
+                <!-- how do you make these radio buttons required? -->
+                    <label><input type="radio" name="membership" value="np"> Non-Profit</label>
+                    <label><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                    <label><input type="radio" name="membership" value="Silver"> Silver</label>
+                    <label><input type="radio" name="membership" value="Gold"> Gold</label>
+            </fieldset>
+            <input type="submit" value="Join the Chamber" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <div id="chamber-footer">
+            <div id="chamber-footer-g1">
+                <img src="images/cocm_logo100.webp" alt="Makati Chamber of Commerce Logo">
+                <div>
+                    <p>Makati Chamber of Commerce</p>
+                    <address>11 J.P. Rizal Avenue, Makati, Metro Manila, Philippines</address>                   
+                </div>
+            </div>
+            <div id="chamber-footer-g2">
+                <p>📨 info@mcc.com</p>
+                <p>☎️ 123-456-7890</p>
+                <a href="https://goo.gl/maps/jAfv8ZmDiYaSrHxG9" id="map-link">📍Location Map</a>    
+            </div>
+        </div>
+        <hr>
+        <div id="base-footer">
+            <div>
+                <p>&copy; <span id="footerYear"></span></p>
+                <p class="separator"> • </p>   
+                <p>Sunseehray Tirazona</p>
+                <p class="separator"> • </p>   
+                <p>WDD 230 Project</p>            
+                <p class="separator"> • </p>       
+            </div>
+            <p>Last Updated: <span id="dateLastUpdated"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

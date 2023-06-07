@@ -469,6 +469,7 @@ form input {
 
 form textarea {
     background-color: #eee;
+    padding: 4px;
 }
 
 form input:invalid, form input:required {

@@ -112,6 +112,23 @@
         transition: 0.8s;
     }
 
+    /* join */
+
+    h2.join, table.features {
+        grid-column: 1/13;
+    }
+
+    form {
+        grid-column: 1/13;
+    }
+
+    form fieldset {
+        grid-column: 1/13;
+    }
+
+    input.submitBtn {
+        grid-column: 1/13;
+    }
 
     /* footer */
 

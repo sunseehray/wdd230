@@ -72,9 +72,9 @@
                     <tr>
                         <th class="table-subheader"></th>
                         <th scope="col" class="table-subheader">NP</th>
-                        <th scope="col" class="table-subheader" aria-label="Bronze">🥉</th>
-                        <th scope="col" class="table-subheader" aria-label="Silver">🥈</th>
-                        <th scope="col" class="table-subheader" aria-label="Gold">🥇</th>
+                        <th scope="col" class="table-subheader">🥉</th>
+                        <th scope="col" class="table-subheader">🥈</th>
+                        <th scope="col" class="table-subheader">🥇</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -127,7 +127,7 @@
                 <label>First Name* <input type="text" name="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" required></label>
                 <!-- regexp for position -->
-                <label>Position Title <input type="text" name="position" pattern="[A-Za-z \-]{7,}"></label>
+                <label>Position Title <input type="text" name="position" title="Use only alpha characters, space, or hypen. Minimum 7 characters" pattern="[A-Za-z \-]{7,}"></label>
                 <label>Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
                 <label>Cellphone Number* <input type="tel" name="tel" required></label>
             </fieldset>

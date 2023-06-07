@@ -447,10 +447,12 @@ form fieldset {
     margin: 10px 8px;
     color: #23487B;
     border-radius: 5px;
+    border-color: #23487B;
 }
 
 form fieldset legend {
-    padding: 0 .75rem;
+    padding: 8px .75rem;
+    border: 2px solid #F7960F;
 }
 
 form label {
@@ -498,7 +500,7 @@ input[type=radio] {
 
 form input.submitBtn {
     border: 2px solid white;
-    background-color: #F7960F;
+    background-color: #85C536;
     padding: 2%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 5px black;

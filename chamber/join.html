@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makati Chamber of Commerce</title>
-    <meta name="description" content="The Makati Chamber of Commerce helps business owners and visitors in Makati connect and discover what's in and out in the market today. Join the Chamber and get access to perks and VIP services.">
+    <title>Join the Makati Chamber of Commerce</title>
+    <meta name="description" content="Join the chamber and choose what membership level you like.">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -41,6 +41,9 @@
         <nav>
             <ul class="nav-menu">
                 <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
                     <a href="discover.html" class="nav-link">Discover</a>
                 </li>
                 <li class="nav-item">
@@ -62,7 +65,8 @@
                 <legend>Applicant Information</legend>
                 <label>First Name* <input type="text" name="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Position Title <input type="text" name="position" ></label>
+                <!-- regexp for position -->
+                <label>Position Title <input type="text" name="position" pattern="[A-Za-z \-]{7,}"></label>
                 <label>Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
                 <label>Cellphone Number <input type="tel" name="tel" required></label>
             </fieldset>
@@ -74,11 +78,10 @@
             <fieldset>
                 <legend>Membership Level</legend>
                 <div>Please select one: </div>
-                <!-- how do you make these radio buttons required? -->
-                    <label><input type="radio" name="membership" value="np"> Non-Profit</label>
-                    <label><input type="radio" name="membership" value="Bronze"> Bronze</label>
-                    <label><input type="radio" name="membership" value="Silver"> Silver</label>
-                    <label><input type="radio" name="membership" value="Gold"> Gold</label>
+                    <label><input type="radio" name="membership" value="np" required> Non-Profit</label>
+                    <label><input type="radio" name="membership" value="Bronze" required> Bronze</label>
+                    <label><input type="radio" name="membership" value="Silver" required> Silver</label>
+                    <label><input type="radio" name="membership" value="Gold" required> Gold</label>
             </fieldset>
             <input type="submit" value="Join the Chamber" class="submitBtn">
         </form>

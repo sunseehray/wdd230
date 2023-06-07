@@ -128,6 +128,41 @@
 
         /* join */
 
+    form {
+        grid-column: 1/13;
+        width: 100%;
+        grid-template-columns: 6fr 3fr;
+    }
+
+    table.features {
+        grid-column: 9/13;
+        grid-row: 2/3;
+        margin: 10px;
+    }
+
+    form fieldset.applicant {
+        grid-column: 1/9;
+        grid-row: 1/2;
+        margin: 10px;
+    }
+
+    form fieldset.businessDetail {
+        grid-column: 1/9;
+        grid-row: 2/3;
+        margin: 10px;
+    }
+
+    form fieldset.selectMembership {
+        grid-column: 9/13;
+        grid-row: 1/2;
+        margin: 10px;
+    }
+
+    form input.submitBtn {
+        margin: 10px;
+        padding: 8px;
+    }
+
         /* footer */
 
     #base-footer {

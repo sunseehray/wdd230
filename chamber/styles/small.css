@@ -424,6 +424,11 @@ p.attribution {
 
 /* <----------- JOIN ----------------> */
 
+h2.join {
+    text-align: center;
+    padding: .75rem;
+}
+
 .thankYouMsg {
     grid-column: 1/13;
     align-self: center;
@@ -434,11 +439,113 @@ p.attribution {
 }
 
 form {
-    grid-column: 1/13;
+    margin: 10px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-label {
+form fieldset {
+    margin: 10px 8px;
+    color: #23487B;
+    width: 90%;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+form input {
+    font-size: 1rem;
+    padding: 4px;
+    background-color: #eee;
+    border: 1px solid #23487B;
+}
+
+form textarea {
+    background-color: #eee;
+}
+
+form input:invalid, form input:required {
+    border-left: 4px solid #d00303;
+}
+
+form input:valid {
+    border-left: 4px solid #85C536;
+}
+
+form label.sbs {
     display: block;
+    font-size: 1rem;
+    padding: .85rem;
+    margin: 0;
+}
+
+form div.radioInstruction {
+    margin: 10px;
+}
+
+input[type=radio] {
+    padding-left: 4px;
+    text-transform: inherit;
+}
+
+form input.submitBtn {
+    border: 2px solid white;
+    background-color: #F7960F;
+    width: 80%;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+form input.submitBtn:hover {
+    border: 2px solid #23487B;
+}
+
+table {
+    margin: 0 2%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 10px lightgray; */
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 4px;
+    caption-side: bottom;
+    font-size: 0.85rem;
+}
+
+thead {
+    background-color: #23487B;
+    color: white;
+}
+
+.table-subheader {
+    background-color: #2E5DA1;
+    color: white;
+}
+
+td {
+    padding: 7px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+th {
+    font-size: larger;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #EEE;
+}
+
+tbody tr td:first-child {
+    font-weight: bold;
 }
 
 /* <----------- FOOTER ----------------> */

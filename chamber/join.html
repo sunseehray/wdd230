@@ -60,6 +60,7 @@
         <span id="time"></span>
     </header>
     <main>
+        <h2 class="join">Join the Chamber today!</h2>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
@@ -68,20 +69,72 @@
                 <!-- regexp for position -->
                 <label>Position Title <input type="text" name="position" pattern="[A-Za-z \-]{7,}"></label>
                 <label>Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
-                <label>Cellphone Number <input type="tel" name="tel" required></label>
+                <label>Cellphone Number* <input type="tel" name="tel" required></label>
             </fieldset>
             <fieldset>
                 <legend>Business Details</legend>
-                <label>Business Name <input type="text" name="business-name" required></label>
-                <label for="business-description">Business Description <textarea id="business-description" name="business-description"></textarea></label>
+                <label>Business Name* <input type="text" name="business-name" required></label>
+                <label for="business-description">Business Description <textarea id="business-description" name="business-description" rows="5"></textarea></label>
             </fieldset>
+            <table class="features">
+                <thead>
+                    <tr>
+                        <th colspan="5" scope="colgroup">Makati Chamber of Commerce Membership Benefits</th>
+                    </tr>
+                    <tr>
+                        <th class="table-subheader"></th>
+                        <th scope="col" class="table-subheader">NP</th>
+                        <th scope="col" class="table-subheader">🥉</th>
+                        <th scope="col" class="table-subheader">🥈</th>
+                        <th scope="col" class="table-subheader">🥇</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inclusion in Directory</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Access to Chamber's Online Forum</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Company Description in Directory</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Spotlight or Brand Exposure</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Sponsorship Opportunities</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+
             <fieldset>
                 <legend>Membership Level</legend>
-                <div>Please select one: </div>
-                    <label><input type="radio" name="membership" value="np" required> Non-Profit</label>
-                    <label><input type="radio" name="membership" value="Bronze" required> Bronze</label>
-                    <label><input type="radio" name="membership" value="Silver" required> Silver</label>
-                    <label><input type="radio" name="membership" value="Gold" required> Gold</label>
+                <div class="radioInstruction">Please select one: </div>
+                    <label class="sbs"><input type="radio" name="membership" value="np" required> Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Bronze" required> Bronze 🥉</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Silver" required> Silver 🥈</label>
+                    <label class="sbs"><input type="radio" name="membership" value="Gold" required> Gold 🥇</label>
             </fieldset>
             <input type="submit" value="Join the Chamber" class="submitBtn">
         </form>

@@ -1,0 +1,23 @@
+* {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+title {
+    display: none;
+}
+
+header {
+    padding: 2rem;
+    box-shadow: 0 0 10px #555;
+}
+
+main {
+    margin: 1rem auto;
+}
+
+div.cards {
+    display: flex;
+}

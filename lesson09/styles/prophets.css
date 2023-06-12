@@ -15,9 +15,22 @@ header {
 }
 
 main {
-    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #DDA15E ;
 }
 
 div.cards {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+div.cards section {
+    padding: 1rem;
+    background-color: #283618;
+    box-shadow: 3px 3px 8px #555;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

@@ -16,7 +16,8 @@ header {
 
 main {
     padding: 1rem;
-    background-color: #DDA15E ;
+    background-color: #DDA15E;
+    max-width: 1600px;
 }
 
 div.cards {

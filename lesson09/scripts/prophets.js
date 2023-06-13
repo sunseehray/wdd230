@@ -8,8 +8,8 @@ function displayProphets (prophets) {
       let h2 = document.createElement('h2');
       let portrait = document.createElement('img');
 
-      let dob = document.createElement('h3');
-      let pob = document.createElement('h3');
+      let dob = document.createElement('p');
+      let pob = document.createElement('p');
   
       // Build the h2 content out to show the prophet's full name - finish the template string
       h2.textContent = `${prophet.name} ${prophet.lastname}`;

@@ -23,7 +23,7 @@
             "businessName":"Studio 116 Dance School",
             "businessDescription":"Therapeutic Ballroom Dancing",
             "imageURL":"images/logo-studio-116-dance-school.png",
-            "website":"https://www.facebook.com/Studio116DanceSchool/",
+            "website":"https://www.studio116.com",
             "level":"silver"
         },
         {
@@ -60,9 +60,9 @@
             "phone":"(02) 11111111",
             "address":"7844 Penthouse Mavenue Bldg., Makati avenue, Makati city",
             "businessName":"HYPERMEDIA",
-            "businessDescription":"Publisher of PH History Books",
+            "businessDescription":"Digital Marketing",
             "imageURL":"images/logo-hypermedia.jpg",
-            "website":"https://www.facebook.com/HypermediaPH/",
+            "website":"https://www.hypermedia.ph",
             "level":"bronze"
         },
         {
@@ -75,7 +75,7 @@
             "businessName":"Sparadic",
             "businessDescription":"Spa On Demand",
             "imageURL":"images/logo-sparadic.png",
-            "website":"https://www.yelp.com/biz/sparadic-mandaluyong",
+            "website":"https://www.sparadic.com",
             "level":"bronze"
         },
         {
@@ -114,7 +114,7 @@
             "businessName":"ERICMAN",
             "businessDescription":"Printing Services",
             "imageURL":"images/logo-ericman-printing-services.png",
-            "website":"https://ericmanprinting200.wixsite.com/ericmanprinting",
+            "website":"https://ericmanprinting.com",
             "level":"gold"
         }
     ]

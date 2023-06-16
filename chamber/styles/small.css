@@ -585,31 +585,97 @@ div.directory-button button {
     height: fit-content;
 }
 
+div.directory-button button:hover {
+    border: 2px solid #23487B ;
+}
+
 div.directory-button button > img {
     width: 44px;
     height: 44px;
 }
 
 div.cards section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 100px;
     align-items: center;
-    justify-content: center;
-    row-gap: .35rem;
-    margin: 1rem;
+    margin: .5rem 0;
     color: #23487B;
 }
 
-div.cards section p {
-    font-size: 14px;
-    text-align: center;
+div.cards section h3 {
+    grid-column: 1/2;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+div.cards section p.desc {
+    grid-column: 1/2;
+    font-size: .9rem;
+    font-style: italic;
+}
+
+div.cards div.contact {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
+
+div.cards section picture {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px #555;
 }
 
 img.directory-logo {
     min-width: 90px;
-    max-width: 200px;
+    max-width: 100px;
     margin: .35rem auto 0 auto;
 }
+
+div.cards section > a#full-link {
+    display: none;
+}
+
+/* list view */
+div.list section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+div.list section:nth-child(odd) {
+    background-color: rgba(247, 150, 15, 0.2);
+}
+
+
+
+div.list section picture {
+    display: none;
+}
+
+div.list section a#full-link {
+    display: block;
+}
+
+div.list p.desc {
+    display: none;
+}
+
+div.list section h3 {
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
 /* <----------- FOOTER ----------------> */
 
 

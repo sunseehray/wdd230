@@ -649,15 +649,14 @@ div.list section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 auto;
     box-shadow: none;
+    margin: 0;
+    padding: .5rem;
 }
 
 div.list section:nth-child(odd) {
     background-color: rgba(247, 150, 15, 0.2);
 }
-
-
 
 div.list section picture {
     display: none;

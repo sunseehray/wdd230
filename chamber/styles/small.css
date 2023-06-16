@@ -561,6 +561,53 @@ table.features tr.fees td.price {
     font-size: 12px;
 }
 
+/* <----------- DIRECTORY ----------------> */
+
+h2.directory {
+    text-align: center;
+    margin: 1rem;
+}
+
+div.directory-button {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+div.directory-button button {
+    border: 2px solid #F7960F;
+    background-color: white;
+    padding: .35rem;
+    margin: .35rem;
+    box-shadow: 1px 1px 3px #555;
+    border-radius: 8px;
+}
+
+div.directory-button button > img {
+    width: 44px;
+    height: 44px;
+}
+
+div.cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .35rem;
+    margin: 1rem;
+    color: #23487B;
+}
+
+div.cards section p {
+    font-size: 14px;
+    text-align: center;
+}
+
+img.directory-logo {
+    min-width: 90px;
+    max-width: 200px;
+    margin: .35rem auto 0 auto;
+}
 /* <----------- FOOTER ----------------> */
 
 

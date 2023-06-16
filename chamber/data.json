@@ -1,5 +1,5 @@
 {
-    "member":[
+    "members":[
         {
             "fname":"Kevin",
             "lname":"Grace",
@@ -23,7 +23,7 @@
             "businessName":"Studio 116 Dance School",
             "businessDescription":"Therapeutic Ballroom Dancing",
             "imageURL":"images/logo-studio-116-dance-school.png",
-            "website":"http://www.sub.studio116danceschool.com/home.html",
+            "website":"https://www.facebook.com/Studio116DanceSchool/",
             "level":"silver"
         },
         {
@@ -62,7 +62,7 @@
             "businessName":"HYPERMEDIA",
             "businessDescription":"Publisher of PH History Books",
             "imageURL":"images/logo-hypermedia.jpg",
-            "website":"http://www.hypermedia.ph/",
+            "website":"https://www.facebook.com/HypermediaPH/",
             "level":"bronze"
         },
         {
@@ -75,7 +75,7 @@
             "businessName":"Sparadic",
             "businessDescription":"Spa On Demand",
             "imageURL":"images/logo-sparadic.png",
-            "website":"https://www.sparadic.com",
+            "website":"https://www.yelp.com/biz/sparadic-mandaluyong",
             "level":"bronze"
         },
         {
@@ -87,7 +87,7 @@
             "address":"9th Floor, Algo Center, 162 LP Leviste Street, Salcedo Village",
             "businessName":"Ikon Solutions Asia Inc.",
             "businessDescription":"Recruitment Agency",
-            "imageURL":"images/logo-ikon-soltions-asia-inc.jpg",
+            "imageURL":"images/logo-ikon-solutions-asia-inc.jpg",
             "website":"https://www.ikonlink.com/",
             "level":"bronze"
         },

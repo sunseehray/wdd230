@@ -670,6 +670,7 @@ div.cards div.contact {
     font-size: .9rem;
     margin-top: .5rem;
     margin-right: 1rem;
+    row-gap: .3rem;
 }
 
 div.cards div.contact a {

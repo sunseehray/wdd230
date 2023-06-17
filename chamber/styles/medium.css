@@ -148,14 +148,23 @@
         align-items: center;
         justify-content: center;
         margin-top: 10px;
+        column-gap: .8rem;
     }
 
     div.cards section {
         grid-template-columns: 1fr;
-        width: 320px;
+        /* width: 320px; */
         height: 400px;
         margin: 1rem auto;
         text-align: center;
+    }
+
+    div.cards section h3 {
+        align-self: flex-end;
+    }
+
+    div.cards section p.desc {
+        align-self: flex-start;
     }
 
     div.cards section picture {

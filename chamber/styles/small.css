@@ -260,12 +260,12 @@ main h2, main p {
 }
 
 .temperature {
-    font-size: 36px;
+    font-size: 1.5rem;
 }
 
 .weatherDescription {
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 1rem;
+    text-transform: capitalize;
 }
 
 #weather table {

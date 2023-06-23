@@ -41,7 +41,7 @@ function spotlightMember (member) {
       // Build the card content
       h3.textContent = `${member.businessName}`;
       desc.textContent = `${member.businessDescription}`;
-      desc.setAttribute("class","desc");
+      desc.setAttribute("class","descSpot");
 
       websiteImg.setAttribute('href', member.website);
       websiteImg.setAttribute('target',"_blank");
@@ -50,10 +50,10 @@ function spotlightMember (member) {
       logo.setAttribute('loading', 'lazy');
       logo.setAttribute('class', 'directory-logo');
 
-      phone.textContent = `☎️ ${member.phone}`;
+      phone.textContent = `${member.phone}`;
       phone.setAttribute('id','phone');
 
-      email.textContent = `📧 ${member.email}`;
+      email.textContent = `${member.email}`;
       email.setAttribute('id','email')
 
   

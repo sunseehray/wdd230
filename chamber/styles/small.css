@@ -406,7 +406,7 @@ h2.join {
     grid-column: 1/13;
     align-self: center;
     justify-self: center;
-    margin: 100px auto;
+    margin: 100px 25px;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -524,6 +524,7 @@ form input.submitBtn {
     border: 2px solid white;
     background-color: #85C536;
     padding: 2%;
+    margin: 2%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 5px black;
     display: block;
@@ -705,6 +706,27 @@ div.list section h3 {
     text-transform: capitalize;
     font-size: .9rem;
 }
+
+/* <----------- CONTACT ----------------> */
+
+#contactForm {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#contactForm h2 {
+    text-align: center;
+}
+
+#contactForm p {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+
 
 /* <----------- FOOTER ----------------> */
 

@@ -45,7 +45,7 @@
         <nav>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="discover.html" class="nav-link">Discover</a>
@@ -57,58 +57,29 @@
                     <a href="join.html" class="nav-link">Join</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
                 </li>
             </ul>
         </nav>
         <span id="time"></span>
     </header>
     <main>
-        <section id="hero">
-            <h2>Welcome to Makati</h2>
-            <img src="images/Makati_skyline_j_0_nSmall.jpg" alt="Makati skyline by j_0_n of flickr under cc-by-2.0"
-                sizes="100vw"
-                srcset="images/Makati_skyline_j_0_nSmall.jpg 570w,
-                        images/Makati_skyline_j_0_nMedium.jpg 960w,
-                        images/Makati_skyline_j_0_nLarge.jpg 1200w">
-            <a href="join.html" class="button">Join the Chamber</a>
-        </section>
-        <section id="event">
-            <h2>Builder's Convention</h2>
-            <h3>The Circuit, Makati</h3>
-            <p>Meet and greet the builders of Makati at The Circuit on Friday at 2:00 pm</p>
-            <a href="#">more info ...</a>
-        </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <div id="weatherHighlight">
-                <img src="images/1530391_weather_clouds_sun_sunny_icon128.png" class="weatherIcon" id="weather-icon" alt="Weather Icon">
-                <p class="temperature"><span id="tempValue"></span>°C</p>    
-            </div>
-            <p class="weatherDescription">Partly Cloudy</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Windspeed:</td>
-                        <td><span id="windspeedValue">2.5</span> km/h</td>
-                    </tr>
-                    <tr>
-                        <td>Wind Chill:</td>
-                        <td><span id="windChillValue">N/A</span></td>
-                    </tr>    
-                </tbody>
-            </table>
-        </section>
-        <section id="news">
-            <h2>Makati City Welcomes Innovative Co-Working Space, Fostering Collaboration and Growth</h2>
-            <p>Makati City introduces an innovative co-working space, providing entrepreneurs and professionals with a dynamic environment for collaboration and growth. With cutting-edge amenities, networking opportunities, and a prime location, this new addition aims to enhance the city's reputation as a hub of innovation and entrepreneurship.</p>
-        </section>
-        <section id="spotlight">
-        </section>
-        <section id="join">
-            <h2>Join the Chamber</h2>
-            <a href="join.html" class="button">Join Us!</a>
-            <p>Join now and discover how the Chamber will benefit your organization!</p>
+        <section id="contactForm">
+            <h2>Our Contact Information</h2>
+            <p>Contact us by phone at 123-456-7890</p>
+            <p>By email at info@mcc.com</p>
+            <p>Visit our headquarters at 11 J.P. Rizal Avenue, Makati, Metro Manila, Philippines</p>
+            
+            <form method="get" action="messagesent.html">
+                <fieldset>
+                    <legend>Request information</legend>
+                    <label>Name: <input type="text" required></label>
+                    <label>Email: <input type="email" required></label>
+                    <label>Phone: <input type="tel" required></label>
+                    <label>Message: <textarea name="contact-message" id="contact-message" cols="30" rows="10" required></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send message" class="submitBtn">
+            </form>
         </section>
     </main>
     <footer>
@@ -141,7 +112,5 @@
         </div>
     </footer>
     <script src="scripts/app.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

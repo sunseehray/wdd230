@@ -233,6 +233,17 @@
     }
 
 
+    /* contact */
+
+    #contactForm {
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contactForm form {
+        width: 95%;
+    }
     /* footer */
 
     #chamber-footer {

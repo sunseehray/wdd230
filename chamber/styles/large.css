@@ -96,19 +96,12 @@
         border: 2px solid rgba(0, 0, 0, 0.2);
     }
 
-    div.tel-web {
-        column-gap: 5px;
-    }
-    #spotlight p, #spotlight a {
-        font-size: 12px;
+    #spotlight div {
+        width: 100%;
     }
 
-    section div.spotlight:nth-child(3) {
+    #spotlight div:nth-child(3) {
         display: inherit;
-    }
-
-    .spotlightImg {
-        height: fit-content;
     }
 
     #news {

@@ -318,61 +318,33 @@ main h2, main p {
     gap: 10px;
 }
 
-div.spotlight {
+#spotlight div {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: center;
-    padding: 10px;
     color: #23487B;
     border: 2px solid rgba(0,0,0, 0.2);
 }
 
-div.spotlight h4 {
+#spotlight div h3 {
     text-align: center;
-}
-
-.spotlight h3 {
-    font-size: 1.3rem;
-    width: 100%;
-    margin-top: -10px;
     padding: 10px;
-    background-color: #23487B;
+    
+}
+
+p.desc {
     text-align: center;
-    color: white;
+    font-style: italic;
+    padding: 10px;
+    padding-top: 0;
 }
 
-div.spotlight hr {
-    width: 100%;
+p#email {
+    margin-bottom: 10px;
 }
 
-div.spotlight a {
-    color: #23487B;
-    text-decoration: none;
-    font-weight: bolder;
-    background: linear-gradient(90deg, transparent, #F7960F, transparent) bottom / 
-    var(--d, 0) 3px no-repeat;
-    transition: 0.5s;
-
-}
-
-div.spotlight a:hover {
-    --d: 75%;
-}
-
-.spotlightImg {
-    height: 145px;
-    display: flex;
-    align-items: center;
-}
-
-div.tel-web {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-}
-
-section div.spotlight:nth-child(3) {
+#spotlight div:nth-child(3) {
     display: none;
 }
 

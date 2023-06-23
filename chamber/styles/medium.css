@@ -42,6 +42,19 @@
         margin-bottom: 10px;
     }
 
+    #spotlight div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #spotlight div picture {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     #join {
         display: flex;
         flex-direction: column;

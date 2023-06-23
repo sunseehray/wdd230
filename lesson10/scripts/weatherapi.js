@@ -7,6 +7,8 @@ const captionDesc = document.querySelector('figcaption');
 // lat: 64.837845, lon: -147.716675
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=64.837845&lon=-147.716675&units=imperial&appid=db9906a97dca16acb8595cd219ca129b';
 
+// const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=db9906a97dca16acb8595cd219ca129b';
+
 // const url = 'http://api.openweathermap.org/geo/1.0/direct?q=Fairbanks&units=imperial&appid=db9906a97dca16acb8595cd219ca129b';
 
 async function apiFetch() {

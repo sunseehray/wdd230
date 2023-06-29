@@ -163,6 +163,7 @@ section {
 main h2 {
     color: #23487B;
     text-align: center;
+    padding: .8rem;
 }
 
 main p {
@@ -337,48 +338,34 @@ p#email {
     justify-content: center;
 }
 
-.visits-label {
-    font-weight: bolder;
-}
-
 .visits p {
     color: white;
     text-align: center;
-}
-.discover {
-    margin: 10px auto;
 }
 
 .discover img {
     width: 100%;
     margin: 8px auto;
+    align-self: center;
 }
 
 #demographics {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: #23487B;
+    gap: 16px;
 }
 
 #demographics img {
     width: 200px;
-    align-self: center;
-    margin: 8px auto;
 }
 
 p.attribution {
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 12px;
     margin: 8px auto;
 }
 
 /* <----------- JOIN ----------------> */
-
-h2.join {
-    text-align: center;
-    padding: .75rem;
-}
 
 .thankYouMsg {
     grid-column: 1/13;

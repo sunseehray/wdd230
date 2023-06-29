@@ -80,7 +80,7 @@ function displayNumVisits (visitsDisplay, numVisits) {
         return;
     } else {
         if (numVisits != 0) {
-            visitsDisplay.innerHTML = `${numVisits} | <strong>Days since last visit: </strong> ${daysBetweenVisit.toFixed(0)}`;
+            visitsDisplay.innerHTML = `${numVisits} | Days since last visit: ${daysBetweenVisit.toFixed(0)}`;
         } else {
             visitsDisplay.textContent = `This is your first visit. 🎉 Welcome!`;
         }

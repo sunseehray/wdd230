@@ -6,7 +6,6 @@
         grid-template-rows: auto;
     }
     
-
     #hero {
         margin: 0;
         grid-column: 1/13;

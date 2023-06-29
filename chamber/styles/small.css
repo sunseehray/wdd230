@@ -155,9 +155,16 @@ nav {
 
 section {
     padding: 16px;
-    margin: 0 auto;
     box-shadow: 0 0 10px lightgray;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    gap: 10px;
+    color: #23487B;
+    border: 2px solid rgba(0,0,0,0.2);
 }
 
 main h2 {
@@ -168,17 +175,6 @@ main h2 {
 
 main p {
     color: #23487B;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px auto;
-    gap: 10px;
-    color: #23487B;
-    border: 2px solid rgba(0,0,0,0.2);
 }
 
 /* <----------- hero ----------------> */
@@ -367,7 +363,8 @@ p.attribution {
 
 /* <----------- JOIN ----------------> */
 
-table.features, input.main-submitBtn {
+/* hide table in small view */
+table.features {
     display: none;
 }
 
@@ -441,10 +438,17 @@ form label.sbs .checkmark:after {
     text-align: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 form fieldset {
     margin: 16px auto;
     color: #23487B;
     border-radius: 5px;
+    width: 90%;
 }
 
 form fieldset legend {
@@ -492,25 +496,17 @@ form label.sbs {
     user-select: none;
 }
 
-
-
 input.submitBtn {
     border: 2px solid white;
     background-color: #85C536;
     padding: 2%;
-    margin: 2%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 5px black;
-    display: block;
-    align-self: center;
-    justify-self: center;
 }
 
 form input.submitBtn:hover {
     border: 2px solid #23487B;
 }
-
-
 
 table.features {
     display: none;
@@ -564,11 +560,6 @@ table.features tr.fees td.price {
 
 /* <----------- DIRECTORY ----------------> */
 
-h2.directory {
-    text-align: center;
-    margin: 1rem;
-}
-
 div.directory-button {
     display: flex;
     margin: 1rem auto;
@@ -620,8 +611,6 @@ div.cards div.contact {
     display: flex;
     flex-direction: column;
     font-size: .9rem;
-    margin-top: .5rem;
-    margin-right: 1rem;
     row-gap: .3rem;
 }
 
@@ -658,6 +647,7 @@ div.list section {
     box-shadow: none;
     margin: 0;
     padding: .5rem;
+    border: none;
 }
 
 div.list section:nth-child(odd) {

@@ -366,6 +366,7 @@ p#email {
 
 .visits p {
     color: white;
+    text-align: center;
 }
 .discover {
     margin: 10px auto;

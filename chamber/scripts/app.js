@@ -65,20 +65,29 @@ images.forEach(image => {
 // number of visits for Discovery Page only
 
 const visitsDisplay = document.querySelector("#num-visits");
+let dateToday = new Date();
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = localStorage.getItem("numVisits") || 0;
+
+const msToDays = 86400000;
+
+let lastVisit = (localStorage.getItem("lastVisit")) || dateToday;
+let lastVisitToDate = new Date(lastVisit);
+let daysBetweenVisit = (dateToday.getTime() - lastVisitToDate.getTime()) / msToDays;
 
 function displayNumVisits (visitsDisplay, numVisits) {
     if (!visitsDisplay) {
         return;
     } else {
         if (numVisits != 0) {
-            visitsDisplay.textContent = numVisits;
+            visitsDisplay.innerHTML = `${numVisits} | <strong>Days since last visit: </strong> ${daysBetweenVisit.toFixed(0)}`;
         } else {
             visitsDisplay.textContent = `This is your first visit. 🎉 Welcome!`;
         }
         numVisits++;
-        localStorage.setItem("numVisits-ls", numVisits);
+
+        localStorage.setItem("lastVisit", dateToday);
+        localStorage.setItem("numVisits", numVisits);
     }
 }
 

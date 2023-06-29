@@ -28,7 +28,7 @@
         align-items: center;
         justify-content: space-between;
         width: auto;
-        color: #23487B;
+        color: white;
         padding: 10px;
     }
 
@@ -98,6 +98,7 @@
 
     #spotlight div {
         width: 100%;
+        height: fit-content;
     }
 
     #spotlight div:nth-child(3) {
@@ -121,34 +122,30 @@
 
         /* join */
 
-    form {
+    form.join-form {
         grid-column: 1/13;
         width: 100%;
-        grid-template-columns: 6fr 3fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     table.features {
-        grid-column: 9/13;
+        grid-column: 2/3;
         grid-row: 1/2;
-        margin: 10px;
     }
 
-    form fieldset.applicant {
-        grid-column: 1/9;
+    fieldset.applicant {
+        grid-column: 1/2;
         grid-row: 1/2;
-        margin: 10px;
     }
 
     form fieldset.businessDetail {
-        grid-column: 1/9;
+        grid-column: 1/2;
         grid-row: 2/3;
-        margin: 10px;
     }
 
     form fieldset.selectMembership {
-        grid-column: 9/13;
-        grid-row: 2/3;
-        margin: 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
 
     form input.submitBtn {

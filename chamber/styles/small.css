@@ -498,13 +498,14 @@ form label.sbs {
     user-select: none;
 }
 
-input.submitBtn {
+form input.submitBtn {
     border: 2px solid white;
     background-color: #85C536;
     padding: 2%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 5px black;
     width: 70%;
+    border-left: 2px solid white;
 }
 
 form input.submitBtn:hover {
@@ -513,52 +514,6 @@ form input.submitBtn:hover {
 
 table.features {
     display: none;
-    width: 90%;
-    margin: 0 2%;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    /* box-shadow: 0 0 10px lightgray; */
-    border-collapse: collapse;
-}
-
-table.features caption {
-    padding: 4px;
-    caption-side: bottom;
-    font-size: 0.85rem;
-}
-
-table.features thead {
-    background-color: #23487B;
-    color: white;
-}
-
-table.features th.table-subheader {
-    background-color: #2E5DA1;
-    color: white;
-}
-
-table.features td {
-    padding: 7px 7px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-size: 1rem;
-}
-
-table.features th {
-    font-size: 1.1rem;
-    padding: 8px;
-}
-
-table.features tbody tr:nth-child(even) {
-    background-color: #EEE;
-}
-
-table.features tbody tr td:first-child {
-    font-weight: bold;
-    text-align: left;
-}
-
-table.features tr.fees td.price {
-    font-size: 12px;
 }
 
 /* <----------- DIRECTORY ----------------> */

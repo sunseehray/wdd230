@@ -61,91 +61,134 @@
     </header>
     <main>
         <h2 class="join">Join the Chamber today!</h2>
+        <section>
+            <form method="get" action="thankyou.html">
+                <table class="features">
+                    <caption>Table 1. Membership Levels & Benefits</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup">Membership Benefits</th>
+                        </tr>
+                        <tr>
+                            <th class="table-subheader"></th>
+                            <th scope="col" class="table-subheader">Non - Profit NP</th>
+                            <th scope="col" class="table-subheader">Bronze 🥉</th>
+                            <th scope="col" class="table-subheader">Silver 🥈</th>
+                            <th scope="col" class="table-subheader">Gold 🥇</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inclusion in Directory</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Access to Chamber's Online Forum</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Company Description in Directory</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Spotlight on Home Page</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Sponsorship Opportunities</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr class="fees">
+                            <td>Annual Membership Fees</td>
+                            <td class="price">Free</td>
+                            <td class="price">PhP 3000</td>
+                            <td class="price">PhP 5000</td>
+                            <td class="price">PhP 7250</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <fieldset class="applicant">
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <!-- regexp for position -->
+                    <label>Position Title <input type="text" name="position" title="Use only alpha characters, space, or hypen. Minimum 7 characters" pattern="[A-Za-z \-]{7,}"></label>
+                    <label>Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label>Cellphone Number* <input type="tel" name="tel" required></label>
+                </fieldset>
+                <fieldset class="businessDetail">
+                    <legend>Business Details</legend>
+                    <label>Business Name* <input type="text" name="business-name" required></label>
+                    <label for="business-description">Business Description <textarea id="business-description" name="business-description" rows="5"></textarea></label>
+                </fieldset>
+                <fieldset class="selectMembership features">
+                    <div class="features">
+                        <section class="benefits">
+                            <h4>Non-Profit NP</h4>
+                            <ul>
+                                <li>Inclusion in directory</li>
+                                <li>Access to Chamber's Online Forum</li>
+                                <li>Free Membership</li>
+                            </ul>
+                        </section>
+                        <section class="benefits">
+                            <h4>Bronze 🥉</h4>
+                            <ul>
+                                <li>Inclusion in directory</li>
+                                <li>Access to Chamber's Online Forum</li>
+                                <li>Company Description in Directory</li>
+                                <li>Annual Membership Fee of PhP 3000</li>
+                            </ul>
+                        </section>
+                        <section class="benefits">
+                            <h4>Silver 🥈</h4>
+                            <ul>
+                                <li>Inclusion in directory</li>
+                                <li>Access to Chamber's Online Forum</li>
+                                <li>Company Description in Directory</li>
+                                <li>Spotlight on Home Page</li>
+                                <li>Annual Membership Fee of PhP 5000</li>
+                            </ul>
+                        </section>
+                        <section class="benefits">
+                            <h4>Gold 🥇</h4>
+                            <ul>
+                                <li>Inclusion in directory</li>
+                                <li>Access to Chamber's Online Forum</li>
+                                <li>Company Description in Directory</li>
+                                <li>Spotlight on Home Page</li>
+                                <li>Sponsorship Opportunities</li>
+                                <li>Annual Membership Fee of PhP 7250</li>
+                            </ul>    
+                        </section>
+                    </div>
+                    <legend>Membership Level</legend>
+                        Select your membership level
+                        <label class="sbs">Non-Profit (NP)<input type="radio" name="membership" value="np" required><span class="checkmark"></span></label>
+                        <label class="sbs">Bronze Membership 🥉<input type="radio" name="membership" value="Bronze" required><span class="checkmark"></span></label>
+                        <label class="sbs">Silver Membership 🥈<input type="radio" name="membership" value="Silver" required><span class="checkmark"></span></label>
+                        <label class="sbs">Gold Membership 🥇<input type="radio" name="membership" value="Gold" required><span class="checkmark"></span></label>
+                </fieldset>
+                <input type="submit" value="Join the Chamber" class="submitBtn">
+            </form>    
+        </section>
         
-        <form method="get" action="thankyou.html">
-            <table class="features">
-                <caption>Table 1. Membership Levels & Benefits</caption>
-                <thead>
-                    <tr>
-                        <th colspan="5" scope="colgroup">Makati Chamber of Commerce Membership Benefits</th>
-                    </tr>
-                    <tr>
-                        <th class="table-subheader"></th>
-                        <th scope="col" class="table-subheader">NP</th>
-                        <th scope="col" class="table-subheader">🥉</th>
-                        <th scope="col" class="table-subheader">🥈</th>
-                        <th scope="col" class="table-subheader">🥇</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Inclusion in Directory</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Access to Chamber's Online Forum</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Company Description in Directory</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Spotlight on Home Page</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr>
-                        <td>Sponsorship Opportunities</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✔️</td>
-                    </tr>
-                    <tr class="fees">
-                        <td>Annual Membership Fees</td>
-                        <td class="price">Free</td>
-                        <td class="price">PhP 3000</td>
-                        <td class="price">PhP 5000</td>
-                        <td class="price">PhP 7250</td>
-                    </tr>
-                </tbody>
-            </table>
-            <fieldset class="applicant">
-                <legend>Applicant Information</legend>
-                <label>First Name* <input type="text" name="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" required></label>
-                <!-- regexp for position -->
-                <label>Position Title <input type="text" name="position" title="Use only alpha characters, space, or hypen. Minimum 7 characters" pattern="[A-Za-z \-]{7,}"></label>
-                <label>Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
-                <label>Cellphone Number* <input type="tel" name="tel" required></label>
-            </fieldset>
-            <fieldset class="businessDetail">
-                <legend>Business Details</legend>
-                <label>Business Name* <input type="text" name="business-name" required></label>
-                <label for="business-description">Business Description <textarea id="business-description" name="business-description" rows="5"></textarea></label>
-            </fieldset>
-            <fieldset class="selectMembership">
-                <legend>Membership Level</legend>
-                <!-- <div class="radioInstruction">Please select one: </div> -->
-                    <label class="sbs">Non-Profit (NP)<input type="radio" name="membership" value="np" required><span class="checkmark"></span></label>
-                    <label class="sbs">Bronze Membership 🥉<input type="radio" name="membership" value="Bronze" required><span class="checkmark"></span></label>
-                    <label class="sbs">Silver Membership 🥈<input type="radio" name="membership" value="Silver" required><span class="checkmark"></span></label>
-                    <label class="sbs">Gold Membership 🥇<input type="radio" name="membership" value="Gold" required><span class="checkmark"></span></label>
-            </fieldset>
-            <input type="submit" value="Join the Chamber" class="submitBtn">
-        </form>
     </main>
     <footer>
         <div id="chamber-footer">

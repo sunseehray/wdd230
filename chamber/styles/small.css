@@ -367,78 +367,25 @@ p.attribution {
 
 /* <----------- JOIN ----------------> */
 
-.thankYouMsg {
-    grid-column: 1/13;
-    align-self: center;
-    justify-self: center;
-    margin: 100px 25px;
-    font-size: 1.5rem;
-    text-align: center;
+table.features, input.main-submitBtn {
+    display: none;
 }
 
-form {
-    margin: 10px auto 20px auto;
-    display: grid;
-}
-
-form fieldset {
-    margin: 10px 8px;
-    color: #23487B;
-    border-radius: 5px;
-    border-color: #23487B;
-}
-
-form fieldset legend {
-    padding: 8px .75rem;
-    border: 2px solid #F7960F;
-    font-size: 25px;
-}
-
-form label {
+div.benefits {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    gap: 10px;
 }
 
-form input {
-    font-size: 1rem;
-    padding: 4px;
-    background-color: #eee;
-    border: 1px solid #23487B;
-}
-
-form textarea {
-    background-color: #eee;
-    padding: 4px;
-}
-
-form input:invalid, form input:required {
-    border-left: 4px solid #d00303;
-}
-
-form input:valid {
-    border-left: 4px solid #85C536;
-}
-
-form label.sbs {
-    /* display: block;
-    font-size: 1rem;
-    padding: .85rem;
-    margin: 0; */
-
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none;
+.benefits li {
+    list-style-type: disc;
+    margin-left: 25px;
 }
 
 input[type=radio] {
-    /* padding-left: 4px;
-    text-transform: inherit; */
-
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -448,7 +395,6 @@ input[type=radio] {
 
 .checkmark {
     position: absolute;
-    top: 0;
     left: 0;
     height: 25px;
     width: 25px;
@@ -485,7 +431,70 @@ form label.sbs .checkmark:after {
     transform: rotate(45deg);
 }
 
-form input.submitBtn {
+
+.thankYouMsg {
+    grid-column: 1/13;
+    align-self: center;
+    justify-self: center;
+    margin: 100px 25px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form fieldset {
+    margin: 16px auto;
+    color: #23487B;
+    border-radius: 5px;
+}
+
+form fieldset legend {
+    padding: 8px .75rem;
+    border: 2px solid white;
+    font-size: 22px;
+    background-color: #23487B;
+    color: white;
+    text-align: center;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+form input {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #23487B;
+}
+
+form textarea {
+    background-color: #eee;
+    padding: 4px;
+}
+
+form input:invalid, form input:required {
+    border-left: 3px solid #d00303;
+}
+
+form input:valid {
+    border-left: 3px solid #85C536;
+}
+
+form label.sbs {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+
+
+input.submitBtn {
     border: 2px solid white;
     background-color: #85C536;
     padding: 2%;
@@ -501,7 +510,11 @@ form input.submitBtn:hover {
     border: 2px solid #23487B;
 }
 
+
+
 table.features {
+    display: none;
+    width: 90%;
     margin: 0 2%;
     border: 2px solid rgba(0, 0, 0, 0.2);
     /* box-shadow: 0 0 10px lightgray; */

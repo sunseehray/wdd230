@@ -441,7 +441,9 @@ form label.sbs .checkmark:after {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 24px;
 }
 
 form fieldset {
@@ -502,6 +504,7 @@ input.submitBtn {
     padding: 2%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 5px black;
+    width: 70%;
 }
 
 form input.submitBtn:hover {

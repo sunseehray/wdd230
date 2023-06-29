@@ -111,6 +111,8 @@
         grid-row: 2/7;
         margin: 10px 10px 10px 0;
         display: block;
+        border: none;
+        box-shadow: none;
     }
 
     #demographics h3 {

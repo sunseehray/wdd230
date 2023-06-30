@@ -126,7 +126,6 @@
     form.join-form input {
         font-size: 16px;
         padding: 4px;
-        height: 100%;
     }
 
     form input.submitBtn {

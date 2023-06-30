@@ -11,22 +11,16 @@
   
     .nav-menu {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-content: center;
         transition: 0s;
     }
     
     .nav-menu.open {
-        display: flex;
         flex-direction: row;
     }
 
     .nav-menu a {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
         width: auto;
         color: white;
         padding: 10px;
@@ -88,9 +82,7 @@
     #spotlight {
         grid-column: 10/13;
         grid-row: 1/4;
-        display: flex;
         flex-direction: column;
-        gap: 10px;
         padding: 10px;
         margin: 0;
         border: 2px solid rgba(0, 0, 0, 0.2);
@@ -106,7 +98,6 @@
     }
 
     #news {
-        display: flex;
         /* Should I remove justify-content? */
         justify-content: center;
         grid-column: 4/10;

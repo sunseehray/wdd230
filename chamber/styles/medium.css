@@ -143,8 +143,6 @@
 
     form.join-form {
         grid-column: 1/13;
-        display: flex;
-        flex-direction: column;
         width: 500px;
     }
 

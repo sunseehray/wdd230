@@ -608,6 +608,9 @@ div.list section h3 {
     text-align: center;
 }
 
+#contactForm form {
+    width: 90%;
+}
 /* <----------- FOOTER ----------------> */
 
 

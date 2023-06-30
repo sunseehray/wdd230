@@ -230,12 +230,7 @@ main p {
 /* <----------- weather ----------------> */
 
 #weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 5px;
-    width: fit-content;
+     width: fit-content;
 }
 
 #weather div {
@@ -244,6 +239,7 @@ main p {
     align-items: center;
     justify-content: space-evenly;
 }
+
 #weather img {
     max-width: 100px;
 }
@@ -285,12 +281,6 @@ main p {
 
 /* <----------- spotlight ----------------> */
 
-#spotlight {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 #spotlight div {
     display: flex;
     flex-direction: column;
@@ -329,9 +319,6 @@ p#email {
     background-color: #23487B;
     padding: 8px;
     margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .visits p {
@@ -343,12 +330,6 @@ p#email {
     width: 100%;
     margin: 8px auto;
     align-self: center;
-}
-
-#demographics {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
 }
 
 #demographics img {
@@ -368,13 +349,8 @@ table.features {
     display: none;
 }
 
-div.benefits {
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+form {
+    margin: 10px auto;
 }
 
 .benefits li {
@@ -388,6 +364,16 @@ input[type=radio] {
     cursor: pointer;
     height: 0;
     width: 0;
+}
+
+form label.sbs {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
 }
 
 .checkmark {
@@ -438,14 +424,6 @@ form label.sbs .checkmark:after {
     text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-}
-
 form fieldset {
     margin: 16px auto;
     color: #23487B;
@@ -488,15 +466,7 @@ form input:valid {
     border-left: 3px solid #85C536;
 }
 
-form label.sbs {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 16px;
-    user-select: none;
-}
+
 
 form input.submitBtn {
     border: 2px solid white;
@@ -506,6 +476,8 @@ form input.submitBtn {
     box-shadow: 1px 1px 5px black;
     width: 70%;
     border-left: 2px solid white;
+    display: block;
+    margin: 0 auto;
 }
 
 form input.submitBtn:hover {
@@ -566,10 +538,7 @@ div.cards section p.desc {
 
 div.cards div.contact {
     grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
     font-size: .9rem;
-    row-gap: .3rem;
 }
 
 div.cards div.contact a {
@@ -635,24 +604,9 @@ div.list section h3 {
 
 /* <----------- CONTACT ----------------> */
 
-#contactForm {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-#contactForm h2 {
+#contactForm p {
     text-align: center;
 }
-
-#contactForm p {
-    margin-left: 25px;
-    margin-right: 10px;
-}
-
-
 
 /* <----------- FOOTER ----------------> */
 

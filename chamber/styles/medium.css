@@ -144,6 +144,8 @@
     form.join-form {
         grid-column: 1/13;
         display: flex;
+        flex-direction: column;
+        width: 500px;
     }
 
     table.features {
@@ -293,12 +295,6 @@
 
     #contactForm {
         grid-column: 1/13;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contactForm form {
-        width: 95%;
     }
     /* footer */
 

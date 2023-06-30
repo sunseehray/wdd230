@@ -129,7 +129,7 @@
     }
 
     form input.submitBtn {
-        width: 50%;
+        width: fit-content;
         margin-bottom: 20px;
         font-size: 1.2rem;
         padding: 8px;

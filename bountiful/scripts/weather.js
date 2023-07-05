@@ -32,7 +32,7 @@ async function displayWeatherForecast(url) {
 }
 
 function createCurrentWeather (weatherData) {
-    const weatherSummary = document.querySelector('.weather');
+    const weatherSummary = document.querySelector('.weatherScript');
     const currentWeatherSection = document.createElement('div');
 
     let h3 = document.createElement('h3');

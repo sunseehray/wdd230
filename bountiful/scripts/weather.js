@@ -8,7 +8,7 @@ async function displayCurrentWeather(url) {
         if (response.ok) {
             const data = await response.json();
             // console.log(data);
-            createCurrentWeather(data);
+            await createCurrentWeather(data);
         } else {
             throw Error(await response.text());
         }
@@ -23,6 +23,10 @@ async function displayWeatherForecast(url) {
         if (response.ok) {
             const data = await response.json();
             console.log(data);
+            await createWeatherForecast();
+            await createWeatherForecastCard(data, 0);
+            await createWeatherForecastCard(data, 8);
+            await createWeatherForecastCard(data, 16);
         } else {
             throw Error(await response.text());
         }
@@ -31,7 +35,7 @@ async function displayWeatherForecast(url) {
     }
 }
 
-function createCurrentWeather (weatherData) {
+async function createCurrentWeather (weatherData) {
     const weatherSummary = document.querySelector('.weatherScript');
     const currentWeatherSection = document.createElement('div');
 
@@ -52,7 +56,7 @@ function createCurrentWeather (weatherData) {
     const t = weatherData.main.temp;
     const h = weatherData.main.humidity;
 
-    temperature.innerHTML = `${t.toFixed(1)} &deg; F`;
+    temperature.innerHTML = `${t.toFixed(0)} &deg;F`;
     weatherDesc.textContent = desc;
     humidity.innerHTML = `💧 ${h} %`;
 
@@ -63,6 +67,46 @@ function createCurrentWeather (weatherData) {
     currentWeatherSection.appendChild(humidity);
 
     weatherSummary.appendChild(currentWeatherSection);
+}
+
+async function createWeatherForecast () {
+    const weatherSummary = document.querySelector('.weatherScript');
+    const forecastWeatherSection = document.createElement('div');
+    forecastWeatherSection.setAttribute('class',"weatherForecast");
+
+    let h3 = document.createElement('h3');
+
+    h3.textContent = `3-Day Forecast`;
+    forecastWeatherSection.appendChild(h3);
+    weatherSummary.appendChild(forecastWeatherSection);
+}
+
+async function createWeatherForecastCard (forecastData, index) {
+    const weatherForecastSection = document.querySelector('.weatherForecast')
+    const weatherForecastCard = document.createElement('div');
+
+    let h4 = document.createElement('h4');
+    let cardIcon = document.createElement('img');
+    let cardTemp = document.createElement('p');
+
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    const d = new Date(forecastData.list[index].dt_txt);
+    let day = weekday[d.getDay()];
+
+    h4.innerHTML = day;
+
+    const icon = `https://openweathermap.org/img/wn/${forecastData.list[index].weather[0].icon}@2x.png`;
+    const desc = forecastData.list[index].weather[0].description;
+    cardIcon.setAttribute('src', icon);
+    cardIcon.setAttribute('alt', desc);
+
+    cardTemp.innerHTML = `${forecastData.list[index].main.temp.toFixed(0)} &deg;F`;
+    weatherForecastCard.appendChild(h4);
+    weatherForecastCard.appendChild(cardIcon);
+    weatherForecastCard.appendChild(cardTemp);
+
+    weatherForecastSection.appendChild(weatherForecastCard);
 }
 
 displayCurrentWeather(currentweather);

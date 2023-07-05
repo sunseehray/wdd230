@@ -39,6 +39,33 @@
     </header>
     <main>
         <h2>Build Your Specialty Drink</h2>
+        <form>
+            <label for="fname">First Name <input type="text" name="fname" id="fname" required autocomplete="given-name">
+            </label>
+            <label for="email">Email <input type="email" name="email" id="email" required autocomplete="email">
+            </label>
+            <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required autocomplete="tel">
+            </label>
+            <label for="option1">Option 1
+                <select name="option1" id="option1">
+                    <option value="">Select</option>
+                </select>
+            </label>
+            <label for="option 2">Option 2
+                <select name="option 2" id="option 2">
+                    <option value="">Select</option>
+                </select>
+            </label>
+            <label for="option3">Option 3
+                <select name="option3" id="option3">
+                    <option value="">Select</option>
+                </select>
+            </label>
+            <input type="submit" value="Submit" class="button">
+        </form>
+        <div class="order-alert">
+
+        </div>
     </main>
     <footer>
         <div class="footer-branding">
@@ -70,5 +97,6 @@
         </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/fresh.js"></script>
 </body>
 </html>

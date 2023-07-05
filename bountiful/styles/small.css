@@ -126,11 +126,12 @@ h2, h3, h4 {
     text-decoration: none;
     font-weight: 700;
     color: var(--primary);
-    padding: .5rem;
+    padding: .5rem 1rem .5rem 1rem;
     border: 2px solid var(--primary);
     border-radius: 25px;
     box-shadow: 0 5px 5px lightgray;
-    width: 70px;
+    width: fit-content;
+    height: auto;
     justify-self: center;
 }
 
@@ -234,6 +235,39 @@ section p {
 
 .order-history span:nth-child(2) {
     font-size: 100px;
+}
+
+/* fresh */
+
+.message {
+    display: none;
+}
+
+form {
+    box-shadow: 0 0 3px 3px lightgray;
+}
+
+form, form label {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    background-color: var(--primary);
+    color: var(--accent1);
+}
+
+form label {
+    padding-top: 2px;
+}
+
+form input, form select {
+    background-color: white;
+    height: 28px;
+    font-size: 20px;
+    border: none;
+}
+
+form .button {
+    margin: 5px auto;
 }
 
 /* footer */

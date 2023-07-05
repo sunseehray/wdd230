@@ -24,9 +24,9 @@ async function displayWeatherForecast(url) {
             const data = await response.json();
             console.log(data);
             await createWeatherForecast();
-            await createWeatherForecastCard(data, 0);
-            await createWeatherForecastCard(data, 8);
-            await createWeatherForecastCard(data, 16);
+            await createWeatherForecastCard(data, 10); // taking forecast at 3pm for Day Icons instead of night
+            await createWeatherForecastCard(data, 18);
+            await createWeatherForecastCard(data, 26);
         } else {
             throw Error(await response.text());
         }
@@ -45,7 +45,7 @@ async function createCurrentWeather (weatherData) {
     let weatherDesc = document.createElement('p');
     let humidity = document.createElement('p');
 
-    h3.textContent = `Current Conditions`;
+    h3.textContent = `Today`;
 
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
     const desc = weatherData.weather[0].description;

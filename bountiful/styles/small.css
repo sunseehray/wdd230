@@ -1,3 +1,10 @@
+:root {
+    --primary: #ae0050;
+    --secondary: #aa3e00;
+    --accent1: #fff1d0;
+    --accent2: #1a1423;
+}
+
 * {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,8 +20,8 @@ body {
 .call-banner {
     display: block;
     text-align: center;
-    background-color: #aa3e00;
-    color: #fff1d0;
+    background-color: var(--secondary);
+    color: var(--accent1);
     text-decoration: none;
     padding: .9rem;
 }
@@ -33,7 +40,7 @@ header picture {
 header h1 {
     margin: 0 auto;
     grid-column: 2;
-    color: #ae0050;
+    color: var(--primary);
     font-family: 'Calistoga', Georgia, serif;
     font-size: 40px;
     line-height: 35px;
@@ -61,14 +68,14 @@ nav ul {
 li a {
     display: block;
     text-decoration: none;
-    color: #ae0050;
+    color: var(--primary);
     font-size: 20px;
     padding: .5rem;
 
 }
 
 li a:hover {
-    background-color: #ae0050;
+    background-color: var(--primary);
     color: white;
 }
 
@@ -78,7 +85,7 @@ li a:hover {
 
 header button span {
     font-size: 40px;
-    color: #ae0050;
+    color: var(--primary);
 }
 
 header button {
@@ -112,18 +119,19 @@ main > div {
 }
 
 h2, h3, h4 {
-    color: #ae0050;
+    color: var(--primary);
     font-family: 'Calistoga', Georgia, serif;
     text-align: center;
+    padding: 2%;
 }
 
 .button {
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-    color: #ae0050;
+    color: var(--primary);
     padding: .5rem;
-    border: 2px solid #ae0050;
+    border: 2px solid var(--primary);
     border-radius: 25px;
     box-shadow: 0 5px 5px lightgray;
     width: 70px;
@@ -131,7 +139,7 @@ h2, h3, h4 {
 }
 
 .button:hover {
-    background-color: #ae0050;
+    background-color: var(--primary);
     color: white;
     border: 2px solid white;
 }
@@ -173,13 +181,23 @@ main div {
 
 /* main - weather */
 
+.weather {
+    padding: 1rem 0 1rem 0;
+    background-color: lightgray;
+    /* background-color: rgba(179, 0, 80, .1); */
+    color: var(--primary);
+}
+
+.weather p {
+    text-transform: capitalize;
+}
+
 .weatherScript {
     row-gap: 1rem;
 }
 
 .weatherScript div{
     row-gap: 0.2rem;
-    border: 1px solid red;
 }
 
 .weatherForecast {
@@ -223,11 +241,12 @@ section p {
 
 footer {
     text-align: center;
-    color: #ae0050;
+    color: var(--primary);
+    background-color: rgba(174, 0, 80, .2);
 }
 
 footer a {
-    color: #ae0050;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 700;
     display: block;
@@ -248,7 +267,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: 2px solid #ae0050;
     padding: 1rem 0 1rem 0;
     row-gap: 1rem;
 }

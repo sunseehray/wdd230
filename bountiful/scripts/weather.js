@@ -22,7 +22,7 @@ async function displayWeatherForecast(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             await createWeatherForecast();
             await createWeatherForecastCard(data, 10); // taking forecast at 3pm for Day Icons instead of night
             await createWeatherForecastCard(data, 18);

@@ -11,7 +11,6 @@ async function fruitFetch(url) {
             const form = document.querySelector('form');
             const orderOutput = document.querySelector('.order-output');
 
-
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
             
@@ -22,6 +21,16 @@ async function fruitFetch(url) {
                 const fruit2 = document.querySelector('#option2').value;
                 const fruit3 = document.querySelector('#option3').value;
                 const instructions = document.querySelector('textarea').value;
+
+                calculateNutrition(fruit1, fruit2, fruit3, data);
+
+                const carb1 = sessionStorage.getItem("carb-1");
+                const carb2 = sessionStorage.getItem("carb-2");
+                const carb3 = sessionStorage.getItem("carb-3");
+
+                const carbohydrates = Number(carb1) + Number(carb2) + Number(carb3);
+
+                const prot1 = sessionStorage.getItem("prot-1");
             
                 const output = `
                     <p><strong>Order Details:</strong></p>
@@ -84,10 +93,30 @@ function createOption(data) {
 
 fruitFetch(fruitData);
 
-function calculateCarbs (fruit, data) {
+function calculateNutrition (fruitName1, fruitName2, fruitName3, data) {
     data.forEach(element => {
-        if (element.name === fruit) {
-            return element.nutritions.carbohydrates;
+        if(element.name === fruitName1) {
+            sessionStorage.setItem("carb-1",element.nutritions.carbohydrates);
+            sessionStorage.setItem("prot-1",element.nutritions.protein);
+            sessionStorage.setItem("fat-1",element.nutritions.fat);
+            sessionStorage.setItem("sug-1",element.nutritions.sugar);
+            sessionStorage.setItem("cal-1",element.nutritions.calories);
+        }
+        
+        if (element.name === fruitName2) {
+            sessionStorage.setItem("carb-2",element.nutritions.carbohydrates);
+            sessionStorage.setItem("prot-2",element.nutritions.protein);
+            sessionStorage.setItem("fat-2",element.nutritions.fat);
+            sessionStorage.setItem("sug-2",element.nutritions.sugar);
+            sessionStorage.setItem("cal-2",element.nutritions.calories);
+        } 
+        
+        if (element.name === fruitName3) {
+            sessionStorage.setItem("carb-3",element.nutritions.carbohydrates);
+            sessionStorage.setItem("prot-3",element.nutritions.protein);
+            sessionStorage.setItem("fat-3",element.nutritions.fat);
+            sessionStorage.setItem("sug-3",element.nutritions.sugar);
+            sessionStorage.setItem("cal-3",element.nutritions.calories);
         }
     })
 }

@@ -177,7 +177,7 @@ main div {
 
 /* main - weather */
 
-.weather, .fresh {
+.weather, .fresh, form {
     padding: 1rem 0 1rem 0;
     margin: 1rem;
     border: 2px solid var(--primary);
@@ -265,9 +265,15 @@ form {
 form, form label {
     display: flex;
     flex-direction: column;
-    margin: 8px;
+    margin: 16px;
     background-color: var(--primary);
     color: var(--accent1);
+}
+
+form p {
+    text-align: center;
+    font-family: 'Calistoga', Georgia, serif;
+    font-size: 20px;
 }
 
 form label {

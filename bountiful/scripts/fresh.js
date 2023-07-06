@@ -11,6 +11,8 @@ async function fruitFetch(url) {
             const form = document.querySelector('form');
             const orderOutput = document.querySelector('.order-output');
 
+            let numOrders = localStorage.getItem("num-orders") || 0;
+
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
             
@@ -68,15 +70,19 @@ async function fruitFetch(url) {
                     <p><strong>Special Instructions:</strong> ${instructions}</p>
                     <p><strong>Total Nutritional Information:</strong><p>
                     <ul>
-                    <li>Carbohydrates: ${carbohydrates}</li>
-                    <li>Protein: ${protein}</li>
-                    <li>Fat: ${fat}</li>
-                    <li>Sugar: ${sugar}</li>
-                    <li>Calories: ${calories}</li>
+                    <li>Carbohydrates: ${carbohydrates.toFixed(1)}</li>
+                    <li>Protein: ${protein.toFixed(1)}</li>
+                    <li>Fat: ${fat.toFixed(1)}</li>
+                    <li>Sugar: ${sugar.toFixed(1)}</li>
+                    <li>Calories: ${calories.toFixed(1)}</li>
                     </ul>
                 `;
             
                 orderOutput.innerHTML = output;
+                numOrders++;
+
+                localStorage.setItem("num-orders", numOrders);
+                
             })
             
         } else {
@@ -117,6 +123,8 @@ fruitFetch(fruitData);
 
 function calculateNutrition (fruitName1, fruitName2, fruitName3, data) {
     data.forEach(element => {
+
+        // adjust this code because there's an error when there are similar fruits
         if(element.name === fruitName1) {
             sessionStorage.setItem("carb-1",element.nutritions.carbohydrates);
             sessionStorage.setItem("prot-1",element.nutritions.protein);

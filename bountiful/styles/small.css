@@ -258,11 +258,6 @@ section p {
 /* fresh */
 
 
-
-.message {
-    display: none;
-}
-
 form {
     box-shadow: 0 0 3px 3px lightgray;
 }
@@ -285,7 +280,7 @@ form label {
     padding-top: 2px;
 }
 
-form input, form select {
+form input, form select, textarea {
     background-color: white;
     min-height: 28px;
     font-size: 20px;

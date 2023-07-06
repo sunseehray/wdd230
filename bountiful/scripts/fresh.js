@@ -31,7 +31,29 @@ async function fruitFetch(url) {
                 const carbohydrates = Number(carb1) + Number(carb2) + Number(carb3);
 
                 const prot1 = sessionStorage.getItem("prot-1");
+                const prot2 = sessionStorage.getItem("prot-2");
+                const prot3 = sessionStorage.getItem("prot-3");
+
+                const protein = Number(prot1) + Number(prot2) + Number(prot3);
+
+                const fat1 = sessionStorage.getItem("fat-1");
+                const fat2 = sessionStorage.getItem("fat-2");
+                const fat3 = sessionStorage.getItem("fat-3");
             
+                const fat = Number(fat1) + Number(fat2) + Number(fat3);
+
+                const sug1 = sessionStorage.getItem("sug-1");
+                const sug2 = sessionStorage.getItem("sug-2");
+                const sug3 = sessionStorage.getItem("sug-3");
+
+                const sugar = Number(sug1) + Number(sug2) + Number(sug3);
+
+                const cal1 = sessionStorage.getItem("cal-1");
+                const cal2 = sessionStorage.getItem("cal-2");
+                const cal3 = sessionStorage.getItem("cal-3");
+
+                const calories = Number(cal1) + Number(cal2) + Number(cal3);
+
                 const output = `
                     <p><strong>Order Details:</strong></p>
                     <p><strong>Name:</strong> ${firstName}</p>
@@ -47,10 +69,10 @@ async function fruitFetch(url) {
                     <p><strong>Total Nutritional Information:</strong><p>
                     <ul>
                     <li>Carbohydrates: ${carbohydrates}</li>
-                    <li>Protein: </li>
-                    <li>Fat: </li>
-                    <li>Sugar: </li>
-                    <li>Calories: </li>
+                    <li>Protein: ${protein}</li>
+                    <li>Fat: ${fat}</li>
+                    <li>Sugar: ${sugar}</li>
+                    <li>Calories: ${calories}</li>
                     </ul>
                 `;
             

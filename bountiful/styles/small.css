@@ -110,12 +110,10 @@ button.open :nth-child(2) {
 
 /* main */
 
-img {
-    max-width: 100vw;
-}
+
 
 h2, h3, h4 {
-    color: var(--accent2);
+    color: var(--primary);
     font-family: 'Calistoga', Georgia, serif;
     text-align: center;
     padding: 2%;
@@ -179,14 +177,17 @@ main div {
 
 /* main - weather */
 
-.weather {
+.weather, .fresh {
     padding: 1rem 0 1rem 0;
-    background-color: lightgray;
-    /* background-color: rgba(179, 0, 80, .1); */
+    margin: 1rem;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 5px 5px #eee;
+    border-radius: 15px;
 }
 
 .weather p {
     text-transform: capitalize;
+    color: var(--primary);
 }
 
 .weatherForecast {
@@ -237,7 +238,21 @@ section p {
     font-size: 100px;
 }
 
+.fresh {
+    position: relative;
+    height: 480px;
+}
+
+.fresh picture {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: .2;
+}
+
 /* fresh */
+
+
 
 .message {
     display: none;
@@ -261,9 +276,10 @@ form label {
 
 form input, form select {
     background-color: white;
-    height: 28px;
+    min-height: 28px;
     font-size: 20px;
     border: none;
+    padding: 8px;
 }
 
 form .button {

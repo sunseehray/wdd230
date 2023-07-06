@@ -227,6 +227,11 @@ section p {
     display: none;
 }
 
+/* reduce resources with 3x small screens */
+.summary :nth-child(3) {
+    display: none;
+}
+
 /* main - order history */
 
 .order-history span {

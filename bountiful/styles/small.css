@@ -21,7 +21,7 @@ body {
 .call-banner {
     display: block;
     text-align: center;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--accent1);
     text-decoration: none;
     padding: .9rem;
@@ -317,6 +317,9 @@ iframe {
 
 footer {
     text-align: center;
+}
+
+footer, header {
     background-color: rgba(174, 0, 80, .2);
 }
 
@@ -352,6 +355,8 @@ footer a:hover, .basic-link:hover {
 
 .footer-base {
     row-gap: 0;
+    background-color: var(--primary);
+    color: var(--accent1);
 }
 
 .nav-social {

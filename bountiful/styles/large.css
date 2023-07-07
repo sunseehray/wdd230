@@ -113,4 +113,16 @@
         left: 50px;
     }
 
+    .nav-social {
+        grid-column: 4;
+    }
+
+    .attributions, .nav-social, .contact-footer, .footer-branding img {
+        grid-row: 1;
+    }
+
+    .footer-branding {
+        column-gap: 100px;
+    }
+
 }

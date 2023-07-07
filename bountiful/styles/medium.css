@@ -90,4 +90,39 @@
    .call-banner {
     display: none;
    }
+
+   .footer-branding {
+     display: grid;
+     column-gap: 50px;
+   }
+
+   .footer-branding img {
+     grid-column: 1;
+     grid-row: 1/3;
+   }
+
+   .contact-footer {
+     grid-column: 2;
+     grid-row: 1/3;
+   }
+
+   .attributions {
+     grid-column: 3;
+     grid-row: 1/2;
+   }
+
+   .nav-social {
+     grid-column: 3;
+     grid-row: 2/3;
+   }
+
+   .footer-base {
+     display: flex;
+     flex-direction: row;
+     column-gap: 8px;
+   }
+
+   .separator {
+     display: inherit;
+   }
 }

@@ -229,7 +229,7 @@ section p {
 }
 
 /* reduce resources with 3x small screens */
-.summary :nth-child(3) {
+.summary :nth-child(4) {
     display: none;
 }
 
@@ -291,6 +291,12 @@ form input, form select, textarea {
 
 form .button {
     margin: 5px auto;
+}
+
+.order-output {
+    border: 2px dotted rgba(0, 0, 0, .2);
+    padding: 16px;
+    margin: 16px;
 }
 
 /* footer */

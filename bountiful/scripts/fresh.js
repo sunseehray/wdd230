@@ -24,6 +24,8 @@ async function fruitFetch(url) {
                 const fruit3 = document.querySelector('#option3').value;
                 const instructions = document.querySelector('textarea').value;
 
+                const orderDate = new Date().toDateString();
+
                 calculateNutrition(fruit1, fruit2, fruit3, data);
 
                 const carb1 = sessionStorage.getItem("carb-1");
@@ -57,7 +59,8 @@ async function fruitFetch(url) {
                 const calories = Number(cal1) + Number(cal2) + Number(cal3);
 
                 const output = `
-                    <p><strong>Order Details:</strong></p>
+                    <p><strong>ORDER DETAILS</strong></p>
+                    <p><strong>Order Date:</strong> ${orderDate}</p>
                     <p><strong>Name:</strong> ${firstName}</p>
                     <p><strong>Email:</strong> ${email}</p>
                     <p><strong>Phone:</strong> ${phone}</p>

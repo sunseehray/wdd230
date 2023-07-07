@@ -5,7 +5,7 @@
     --accent2: #1a1423;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 43.75em) {
    main {
     display: grid;
    }
@@ -73,9 +73,21 @@
         height: auto;
    }
 
+   .fresh picture {
+        position:relative;
+        opacity: 1;
+    } 
+   .fresh picture img {
+        width: 300px;
+        height: auto;
+    }
+
    form {
     max-width: 520px;
     margin: 16px auto;
    }
 
+   .call-banner {
+    display: none;
+   }
 }

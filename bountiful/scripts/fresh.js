@@ -126,7 +126,6 @@ fruitFetch(fruitData);
 function calculateNutrition (fruitName1, fruitName2, fruitName3, data) {
     data.forEach(element => {
 
-        // adjust this code because there's an error when there are similar fruits
         if(element.name === fruitName1) {
             sessionStorage.setItem("carb-1",element.nutritions.carbohydrates);
             sessionStorage.setItem("prot-1",element.nutritions.protein);

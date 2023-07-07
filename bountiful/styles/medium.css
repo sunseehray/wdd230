@@ -1,3 +1,81 @@
-@media only screen and (min-width: 30em) {
-    
+:root {
+    --primary: #ae0050;
+    --secondary: #aa3e00;
+    --accent1: #fff1d0;
+    --accent2: #1a1423;
+}
+
+@media only screen and (min-width: 32em) {
+   main {
+    display: grid;
+   }
+
+   .fresh, .weather {
+    margin: 16px;
+   }
+
+   .hero {
+        grid-column: 1/3;
+        grid-row: 1;
+        margin: 0;
+   }
+
+   .weather {
+        grid-column: 1/2;
+        grid-row: 3;
+   }
+
+   .summary {
+        grid-column: 1/3;
+        grid-row: 2;
+   }
+
+   .summary section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto repeat(5, 1fr);
+        margin: 16px;
+   }
+
+   .summary section h3 {
+        display: none;
+        
+   }
+
+   .summary section picture {
+        grid-column: 1/11;
+        grid-row: 2/7;
+   }
+
+   .summary section picture img {
+        object-fit: cover;
+        width: 100%;
+   }
+
+   .summary section p {
+        display: block;
+        grid-column: 7/13;
+        grid-row: 2/7;
+        padding: 16px;
+        background-color: rgba(255, 255, 255, .8);
+        border: 1px solid var(--primary);
+        box-shadow: 0 0 5px var(--primary);
+        color: var(--accent2);
+   }
+
+   .summary :nth-child(4) {
+    display: grid;
+   }
+
+   .fresh {
+        grid-column: 2/3;
+        grid-row: 3;
+        height: auto;
+   }
+
+   form {
+    max-width: 520px;
+    margin: 16px auto;
+   }
+
 }

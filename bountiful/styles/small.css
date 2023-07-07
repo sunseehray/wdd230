@@ -112,8 +112,7 @@ button.open :nth-child(2) {
 /* main */
 
 main p {
-    margin: 10px;
-    padding: 10px;
+    margin: 0 16px;
 }
 
 h2, h3, h4 {
@@ -297,7 +296,7 @@ form .button {
     margin: 5px auto;
 }
 
-.plainmessage, .order-output {
+.plainmessage {
     border: 2px dotted rgba(0, 0, 0, .2);
     padding: 16px;
     margin: 16px;
@@ -307,6 +306,11 @@ form .button {
 .order-output p {
     margin: 0;
     padding: 0;
+}
+
+iframe {
+    max-width: 90vw;
+    margin: 16px auto;
 }
 
 /* footer */

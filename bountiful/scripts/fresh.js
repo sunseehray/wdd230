@@ -5,7 +5,6 @@ async function fruitFetch(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             createOption(data);
 
             const form = document.querySelector('form');

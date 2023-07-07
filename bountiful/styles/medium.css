@@ -43,7 +43,7 @@
    }
 
    .summary section picture {
-        grid-column: 1/11;
+        grid-column: 1/9;
         grid-row: 2/7;
    }
 
@@ -124,5 +124,14 @@
 
    .separator {
      display: inherit;
+   }
+
+   .who, .about-contact {
+     margin: auto 80px;
+     padding: 16px;
+   }
+
+   .who {
+     text-align: justify;
    }
 }

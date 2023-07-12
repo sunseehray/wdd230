@@ -20,7 +20,7 @@
     <header>
         <a href="index.html">
             <picture>
-                <img src="images/bountiful-logo-transparent-100.webp" alt="Logo of Bountiful Foods">
+                <img src="images/bountiful-logo-150.webp" alt="Logo of Bountiful Foods">
             </picture>
         </a>
         <h1>Bountiful Foods</h1>    
@@ -40,29 +40,34 @@
     <main>
         <h2>Build Your Specialty Drink</h2>
         <form>
-            <label for="fname">First Name <input type="text" name="fname" id="fname" required autocomplete="given-name">
-            </label>
-            <label for="email">Email <input type="email" name="email" id="email" required autocomplete="email">
-            </label>
-            <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required autocomplete="tel">
-            </label>
-            <p> 🍌 Pick Ingredients 🍊</p>
-            <label for="option1" class="fruitOption">Option 1
-                <select name="option1" id="option1" required>
-                    <option value="">-Select-</option>
-                </select>
-            </label>
-            <label for="option2" class="fruitOption">Option 2
-                <select name="option2" id="option2" required>
-                    <option value="">-Select-</option>
-                </select>
-            </label>
-            <label for="option3" class="fruitOption">Option 3
-                <select name="option3" id="option3" required>
-                    <option value="">-Select-</option>
-                </select>
-            </label>
-            <label for="notes">
+            <fieldset>
+                <legend>Information</legend>
+                <label for="fname">First Name <input type="text" name="fname" id="fname" required autocomplete="given-name">
+                </label>
+                <label for="email">Email <input type="email" name="email" id="email" required autocomplete="email">
+                </label>
+                <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required autocomplete="tel">
+                </label>    
+            </fieldset>
+            <fieldset>
+                <legend>🍌 Pick Ingredients 🍊</legend>
+                <label for="option1" class="fruitOption">Option 1
+                    <select name="option1" id="option1" required>
+                        <option value="">-Select-</option>
+                    </select>
+                </label>
+                <label for="option2" class="fruitOption">Option 2
+                    <select name="option2" id="option2" required>
+                        <option value="">-Select-</option>
+                    </select>
+                </label>
+                <label for="option3" class="fruitOption">Option 3
+                    <select name="option3" id="option3" required>
+                        <option value="">-Select-</option>
+                    </select>
+                </label>    
+            </fieldset>
+            <label for="notes" class="special-instruction">
                 Special Instructions
                 <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
             </label>
@@ -72,7 +77,7 @@
     </main>
     <footer>
         <div class="footer-branding">
-            <img src="images/bountiful-logo-transparent-100.webp" alt="Logo of Bountiful Foods">
+            <img src="images/bountiful-logo-150.webp" alt="Logo of Bountiful Foods" class="footer-logo">
             <div class="contact-footer">
                 <h2>Bountiful Foods</h2>
                 <p>123 Anywhere St., Carlsbad, California</p>

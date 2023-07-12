@@ -38,6 +38,12 @@ header picture {
     grid-column: 1;
 }
 
+header picture img, .footer-logo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
 header h1 {
     margin: 0 auto;
     grid-column: 2;
@@ -265,6 +271,22 @@ section p {
 form {
     box-shadow: 0 0 3px 3px lightgray;
 }
+
+fieldset {
+    border: none;
+}
+
+legend, .special-instruction {
+    font-family: 'Calistoga', Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+textarea {
+    margin: 12px;
+    font-family: Arial, sans-serif;
+}
+
 
 form, form label {
     display: flex;

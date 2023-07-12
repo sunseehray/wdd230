@@ -83,8 +83,17 @@
     }
 
    form {
-    max-width: 520px;
     margin: 16px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+   }
+
+   .special-instruction {
+     grid-column: 1/3;
+     grid-row: 2;
    }
 
    .call-banner {

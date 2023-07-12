@@ -32,25 +32,24 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fresh.html" class="active">Fresh</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Build Your Specialty Drink</h2>
+        <h2 class="h2-fresh">Build Your Specialty Drink</h2>
         <form>
-            <fieldset>
-                <legend>Information</legend>
+            <div class="info">
+                <p class="legend">Information</p>
                 <label for="fname">First Name <input type="text" name="fname" id="fname" required autocomplete="given-name">
                 </label>
                 <label for="email">Email <input type="email" name="email" id="email" required autocomplete="email">
                 </label>
                 <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required autocomplete="tel">
                 </label>    
-            </fieldset>
-            <fieldset>
-                <legend>🍌 Pick Ingredients 🍊</legend>
+            </div>
+            <div class="pick">
+                <p class="legend">🍌 Pick Ingredients 🍊</p>
                 <label for="option1" class="fruitOption">Option 1
                     <select name="option1" id="option1" required>
                         <option value="">-Select-</option>
@@ -66,14 +65,19 @@
                         <option value="">-Select-</option>
                     </select>
                 </label>    
-            </fieldset>
-            <label for="notes" class="special-instruction">
-                Special Instructions
-                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
-            </label>
+            </div>
+            <div class="special-instruction">
+                <p>Special Instructions</p>
+                <label for="notes">
+                    Special Instructions
+                    <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                </label>    
+            </div>
             <input type="submit" value="Order" class="submitBtn button">
         </form>
-        <div class="order-output"></div>
+        <div class="order-output">
+            <p class="plainmessage">Your order details will appear here.</p>
+        </div>
     </main>
     <footer>
         <div class="footer-branding">
@@ -86,7 +90,6 @@
             </div>
             <div class="attributions">
                 <a href="attributions.html">Attributions</a>
-                <a href="contactus.html">Contact Us</a>
                 <a href="aboutus.html">About Us</a>
             </div>
             <div class="nav-social">

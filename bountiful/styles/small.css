@@ -234,7 +234,8 @@ section {
 }
 
 section p {
-    display: none;
+    margin: 16px;
+    color: var(--accent2);
 }
 
 /* reduce resources with 3x small screens */
